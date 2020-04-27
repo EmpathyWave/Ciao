@@ -1,0 +1,699 @@
+fileFormatVersion: 2
+guid: 65b7b7782e5f94cad9e8b28dd2b57bfe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1802398883918910296
+    second: SS_Linguini_TailWag_300x400_0
+  - first:
+      213: -4419040937547666083
+    second: SS_Linguini_TailWag_300x400_1
+  - first:
+      213: 3604804047219160678
+    second: SS_Linguini_TailWag_300x400_2
+  - first:
+      213: 7962249050748648356
+    second: SS_Linguini_TailWag_300x400_3
+  - first:
+      213: 5844797771631668037
+    second: SS_Linguini_TailWag_300x400_4
+  - first:
+      213: -1831548298087327349
+    second: SS_Linguini_TailWag_300x400_5
+  - first:
+      213: 1193968603004781993
+    second: SS_Linguini_TailWag_300x400_6
+  - first:
+      213: 2171135706983379339
+    second: SS_Linguini_TailWag_300x400_7
+  - first:
+      213: -623703014996028278
+    second: SS_Linguini_TailWag_300x400_8
+  - first:
+      213: 2207610416009471605
+    second: SS_Linguini_TailWag_300x400_9
+  - first:
+      213: -1816223557950862478
+    second: SS_Linguini_TailWag_300x400_10
+  - first:
+      213: 244283576574922759
+    second: SS_Linguini_TailWag_300x400_11
+  - first:
+      213: -2959194471403987515
+    second: SS_Linguini_TailWag_300x400_12
+  - first:
+      213: 7286306487368473300
+    second: SS_Linguini_TailWag_300x400_13
+  - first:
+      213: -2284209443124774518
+    second: SS_Linguini_TailWag_300x400_14
+  - first:
+      213: 5742706297576423739
+    second: SS_Linguini_TailWag_300x400_15
+  - first:
+      213: 5632699404869926952
+    second: SS_Linguini_TailWag_300x400_16
+  - first:
+      213: 1703324552510284887
+    second: SS_Linguini_TailWag_300x400_17
+  - first:
+      213: -3944569423688701122
+    second: SS_Linguini_TailWag_300x400_18
+  - first:
+      213: -1707987792034291342
+    second: SS_Linguini_TailWag_300x400_19
+  - first:
+      213: -4275478194454048414
+    second: SS_Linguini_TailWag_300x400_20
+  - first:
+      213: 5715928292575457979
+    second: SS_Linguini_TailWag_300x400_21
+  - first:
+      213: -6592061734513200021
+    second: SS_Linguini_TailWag_300x400_22
+  - first:
+      213: -8457842995655322980
+    second: SS_Linguini_TailWag_300x400_23
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1648
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715a9ed3d0c9141f4b4025b03460ee1c
+      internalID: 1802398883918910296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1648
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ec9fc04b9134364ae4598160292e35
+      internalID: -4419040937547666083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1648
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1959342df764d44c3a4f352b6f3d84ec
+      internalID: 3604804047219160678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1648
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd0507ca1c4946be886401742bb4e66
+      internalID: 7962249050748648356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1648
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ee35f2a50184807a1d15ae9be04ba8
+      internalID: 5844797771631668037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1648
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8dc666967b44a19b812d1304fd2d7c
+      internalID: -1831548298087327349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1248
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f025d00424c24dcfa9a906d6b809b18
+      internalID: 1193968603004781993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1248
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cbacbbd6b6b4726b2dce8ea65e193b
+      internalID: 2171135706983379339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1248
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cda97bd4869343d6b33406bbc58d14d
+      internalID: -623703014996028278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1248
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5f8f4adb27c42beb876756d6b2ad34
+      internalID: 2207610416009471605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_10
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1248
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f8f9e2587804fdbbac793302547247
+      internalID: -1816223557950862478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1248
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06340f7d1db4a4d538829088de1eb207
+      internalID: 244283576574922759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 848
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02627672d285942c98c426ddbf76bdaa
+      internalID: -2959194471403987515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 848
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283c7c8344d3047e3a07c822a2799651
+      internalID: 7286306487368473300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 848
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c963ef11b604a08bd7bd58d7297eb4
+      internalID: -2284209443124774518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_15
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 848
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3f27f5e896a4217ab52278e206c57a
+      internalID: 5742706297576423739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 848
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240fd0b5277234a7a898bdee93554157
+      internalID: 5632699404869926952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_17
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 848
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff985fa890ae4c6b8d9015f4eaec120
+      internalID: 1703324552510284887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9138b62bb8647f18938f3c1a9378c5
+      internalID: -3944569423688701122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 448
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158d96a79b052461091d234ab62f51bc
+      internalID: -1707987792034291342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_20
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 448
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b265e08fca24382813e977c93ef0be
+      internalID: -4275478194454048414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_21
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 448
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b3c25c4772244ef9810744bc72ee37
+      internalID: 5715928292575457979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_22
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 448
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525be2904a2df4102b919ab5bc6837b6
+      internalID: -6592061734513200021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Linguini_TailWag_300x400_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 448
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eea3592d5f3f4df4b97495d2448d900
+      internalID: -8457842995655322980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b334b04fa9b444f4ca1ffbdaf8c53136
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

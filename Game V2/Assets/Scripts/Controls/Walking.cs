@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+//using NUnit.Framework.Constraints;
 using UnityEngine;
 
 public class Walking : MonoBehaviour
@@ -12,6 +13,7 @@ public class Walking : MonoBehaviour
     public float minSpeed;
     public float speed;
     public float scale;
+    public Animator animator;
 
     public GameObject global;
     public GameObject map;
@@ -22,6 +24,7 @@ public class Walking : MonoBehaviour
     private bool talk = false;
 
     private GameObject currentChar;
+    
 
     void Start()
     {
@@ -69,11 +72,14 @@ public class Walking : MonoBehaviour
             //speed += scale;
             rb.constraints = RigidbodyConstraints2D.None;
             rb.velocity = transform.TransformVector(-1.5f,0,0) * speed;
+            animator.SetBool("IsWalkingL", true);
+
         } 
         else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //right
         {
             rb.constraints = RigidbodyConstraints2D.None;
             rb.velocity = transform.TransformVector(1.5f, 0, 0) * speed;
+            animator.SetBool("IsWalkingR", true);
             //speed += scale;
             //rb.velocity = Vector2.right * speed * Time.deltaTime;
         }
@@ -89,12 +95,14 @@ public class Walking : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow))
         {
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
+            animator.SetBool("IsWalkingR", false);
+
         }
         else if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
         {
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
+            animator.SetBool("IsWalkingL", false);
         }
-        
         if(talk && Input.GetKeyUp(KeyCode.E))
         {
             Global.me.currentGS = Global.GameState.Selecting;

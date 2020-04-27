@@ -1,0 +1,627 @@
+fileFormatVersion: 2
+guid: 2b735aee6226748e6a50d23e5f31950b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -539963882291903953
+    second: SS_Danni_Walk_Draft_0
+  - first:
+      213: -3108024766415164446
+    second: SS_Danni_Walk_Draft_1
+  - first:
+      213: 4190085494112929616
+    second: SS_Danni_Walk_Draft_2
+  - first:
+      213: 4951671962697298046
+    second: SS_Danni_Walk_Draft_3
+  - first:
+      213: -2288410458272503126
+    second: SS_Danni_Walk_Draft_4
+  - first:
+      213: 237479676745026783
+    second: SS_Danni_Walk_Draft_5
+  - first:
+      213: 442345285992613478
+    second: SS_Danni_Walk_Draft_6
+  - first:
+      213: 4300998691681046194
+    second: SS_Danni_Walk_Draft_7
+  - first:
+      213: 8855407253924285737
+    second: SS_Danni_Walk_Draft_8
+  - first:
+      213: 2236426199012590912
+    second: SS_Danni_Walk_Draft_9
+  - first:
+      213: -6616199405950100064
+    second: SS_Danni_Walk_Draft_10
+  - first:
+      213: -2418919739225671611
+    second: SS_Danni_Walk_Draft_11
+  - first:
+      213: -633278436534193339
+    second: SS_Danni_Walk_Draft_12
+  - first:
+      213: 2419874300418724209
+    second: SS_Danni_Walk_Draft_13
+  - first:
+      213: -7374184021623356159
+    second: SS_Danni_Walk_Draft_14
+  - first:
+      213: 1218226529191344700
+    second: SS_Danni_Walk_Draft_15
+  - first:
+      213: 5673981780172376760
+    second: SS_Danni_Walk_Draft_16
+  - first:
+      213: -2848876427819498691
+    second: SS_Danni_Walk_Draft_17
+  - first:
+      213: -4589307107902181936
+    second: SS_Danni_Walk_Draft_18
+  - first:
+      213: -3576249060997415018
+    second: SS_Danni_Walk_Draft_19
+  - first:
+      213: -8445488663722242250
+    second: SS_Danni_Walk_Draft_20
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1598
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57e486aba462495e879bd88e8497e52
+      internalID: -539963882291903953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1598
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f19077954a9b48e5adf820111d3541d
+      internalID: -3108024766415164446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_2
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1598
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5c8d27b56294f00bcc14eb0cde0b04
+      internalID: 4190085494112929616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1598
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42afa0a48fabe42d8a22ca026c0656bd
+      internalID: 4951671962697298046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_4
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1598
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84ee397e928942899bde2749504df65
+      internalID: -2288410458272503126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_5
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1598
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49afd3a47423d4b4a8d77c897823b0b0
+      internalID: 237479676745026783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_6
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1598
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92bad3c174e34a70a1b4fa5cb0764c6
+      internalID: 442345285992613478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_7
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1598
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f15e0cee800f4670bf0182e1a5adb71
+      internalID: 4300998691681046194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_8
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1598
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2a7b8cb6fb14058888800439f30e59
+      internalID: 8855407253924285737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_9
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1598
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a215549f06be46d3b6fbf5931bd737d
+      internalID: 2236426199012590912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1098
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d963eb3e50142b8997eb057e6ac654
+      internalID: -6616199405950100064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_11
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1098
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840dc3e47dc774be49c733f700d02f3b
+      internalID: -2418919739225671611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_12
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1098
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a43f0d4198a4eaaa78517606a20bdd
+      internalID: -633278436534193339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1098
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f654f10437fc47328d3a43e534531b4
+      internalID: 2419874300418724209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_14
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1098
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0642d3c310620478691b9f98d13ca9bd
+      internalID: -7374184021623356159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_15
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1098
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f276016b68b4fe987b3e706d781acc
+      internalID: 1218226529191344700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1098
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c96a7137c614830a0cc7707cade754
+      internalID: 5673981780172376760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_17
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1098
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be266aebfd06e48918e928386c603421
+      internalID: -2848876427819498691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_18
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1098
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6e7b5f13bfe40e0a721641a48c4534
+      internalID: -4589307107902181936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_19
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1098
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa3377711de24b29882d8cc30c9463d
+      internalID: -3576249060997415018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_Danni_Walk_Draft_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 598
+        width: 400
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebcd480902c0846e2a72e27336a6d163
+      internalID: -8445488663722242250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 63cd773e3477d4f3a91c928e357103bf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
