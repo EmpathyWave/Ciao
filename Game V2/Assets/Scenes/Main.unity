@@ -415,7 +415,7 @@ RectTransform:
   m_GameObject: {fileID: 41001420}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.080193, y: 4.018824, z: 4.018824}
+  m_LocalScale: {x: 8.204236, y: 4.0805197, z: 4.0805197}
   m_Children:
   - {fileID: 943449028}
   - {fileID: 1317142840}
@@ -431,7 +431,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24.999996, y: -19.999992}
+  m_AnchoredPosition: {x: -24.999996, y: 104}
   m_SizeDelta: {x: 102.3, y: 106.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &41001422
@@ -1317,7 +1317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &135487303
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1327,11 +1327,11 @@ RectTransform:
   m_GameObject: {fileID: 135487302}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3166279, y: 2.2074287, z: 1.0065}
+  m_LocalScale: {x: 1.2376301, y: 2.074983, z: 0.94611}
   m_Children:
   - {fileID: 1543795007}
   m_Father: {fileID: 1077006387}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -5696,6 +5696,7 @@ GameObject:
   m_Component:
   - component: {fileID: 631599771}
   - component: {fileID: 631599772}
+  - component: {fileID: 631599773}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -5734,6 +5735,42 @@ MonoBehaviour:
   currentUIS: 0
   currentLocation: 0
   puzzle1: 0
+--- !u!114 &631599773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631599770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d16170ae5da3c49a2b53022cf63aab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerOne: 150
+  timerTwo: 150
+  timerThree: 400
+  timerFour: 200
+  timerFive: 150
+  line1Done: 0
+  line2Done: 0
+  line3Done: 0
+  line4Done: 0
+  line5Done: 0
+  line1: "Your father and I think it\u2019s time for you to know your roots and visit
+    your Uncle Lucca."
+  line2: "I know you don\u2019t know each other but I called him and he seems excited
+    to see his niece, maybe he can bake you some of his famous focaccia!"
+  line3: "It\u2019s a lovely little town, it will be nice to get away from the city
+    for awhile. Your grandfather loved that place and you can visit the bakery and
+    understand why it means so much to him. It\u2019s been a long time since they
+    spoke, hopefully you can be the reason for them to talk again."
+  line4: "Your things are already at the hotel, it\u2019s just a week so try to enjoy
+    it while you can. Get acquainted with the town, everyone is very welcoming."
+  line5: I love you honey, have a good time. Try to get that focaccia recipe!
+  box: {fileID: 0}
+  background: {fileID: 0}
+  canvas: {fileID: 1077006386}
 --- !u!1 &675537288
 GameObject:
   m_ObjectHideFlags: 0
@@ -6120,14 +6157,14 @@ RectTransform:
   m_GameObject: {fileID: 723223562}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0887731, y: 0.9757302, z: 1.0887737}
   m_Children: []
   m_Father: {fileID: 1491921194}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000060797, y: 2}
+  m_AnchoredPosition: {x: -32.00003, y: -2.1}
   m_SizeDelta: {x: 248.3, y: 27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &723223564
@@ -6152,18 +6189,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 75cf99b428c38714999f5736f3daf636, type: 3}
-    m_FontSize: 14
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 125
     m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Piccola Panetteria & Giovanni Riccobono
 --- !u!222 &723223565
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7423,85 +7460,6 @@ RectTransform:
   m_AnchoredPosition: {x: -404, y: -20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &816188130
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 816188132}
-  - component: {fileID: 816188131}
-  m_Layer: 0
-  m_Name: photos_2018_1_8_fst_liquid-fluid-texture
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &816188131
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816188130}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fe290032f076e4df9a77e1ea4045e5d8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 45.000004, y: 47.652534}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &816188132
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816188130}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 2.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &818131959
 GameObject:
   m_ObjectHideFlags: 0
@@ -9278,7 +9236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1077006384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9361,9 +9319,11 @@ RectTransform:
   - {fileID: 525721641}
   - {fileID: 820224462}
   - {fileID: 2027903875}
+  - {fileID: 1543458627}
   - {fileID: 1491921194}
   - {fileID: 135487303}
   - {fileID: 1379034347}
+  - {fileID: 1687833469}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11626,7 +11586,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Piccola Panetteria
 --- !u!222 &1334760485
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12109,7 +12069,7 @@ GameObject:
   - component: {fileID: 1379034349}
   - component: {fileID: 1379034348}
   m_Layer: 5
-  m_Name: Fading
+  m_Name: Topground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12127,7 +12087,7 @@ RectTransform:
   m_LocalScale: {x: 50827.195, y: 50827.195, z: 50827.195}
   m_Children: []
   m_Father: {fileID: 1077006387}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12187,7 +12147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1390164606
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13018,7 +12978,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1491921194
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13028,16 +12988,15 @@ RectTransform:
   m_GameObject: {fileID: 1491921193}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.95001, y: 1, z: 1}
+  m_LocalScale: {x: 1.0558689, y: 1.533664, z: 1.0280972}
   m_Children:
   - {fileID: 723223563}
-  - {fileID: 1543458627}
   m_Father: {fileID: 1077006387}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -289, y: 84}
+  m_AnchoredPosition: {x: -289, y: 95.1}
   m_SizeDelta: {x: 260.2, y: 52.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1491921195
@@ -13060,7 +13019,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: da8cd374798fbd744a338d0766a99239, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b37a0f9f2e876744ebdcbb9d0e6780c3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13685,14 +13644,14 @@ RectTransform:
   m_GameObject: {fileID: 1543458626}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.499595, y: 2.4576173, z: 2.4576173}
+  m_LocalScale: {x: 0.3433771, y: 1.8234924, z: 1.4301901}
   m_Children: []
-  m_Father: {fileID: 1491921194}
-  m_RootOrder: 1
+  m_Father: {fileID: 1077006387}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 163, y: 15}
+  m_AnchoredPosition: {x: -126.63519, y: -167.18085}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1543458628
@@ -13848,7 +13807,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 75cf99b428c38714999f5736f3daf636, type: 3}
-    m_FontSize: 12
+    m_FontSize: 9
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -13858,7 +13817,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.09
+    m_LineSpacing: 1.05
   m_Text: gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggk
 --- !u!222 &1543795009
 CanvasRenderer:
@@ -14932,6 +14891,104 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   map: {fileID: 1679986021}
+--- !u!1 &1687833468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1687833469}
+  - component: {fileID: 1687833471}
+  - component: {fileID: 1687833472}
+  - component: {fileID: 1687833470}
+  m_Layer: 5
+  m_Name: Textbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1687833469
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687833468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1077006387}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 482.77, y: 203.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1687833470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687833468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 75cf99b428c38714999f5736f3daf636, type: 3}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "It\x19s a lovely little town, it will be nice to get away from the city
+    for awhile. \n\nYour grandfather loved that place and you can visit the bakery
+    and understand why it means so much to him. \n\nIt\x19s been a long time since
+    they spoke, hopefully you can be the reason for them to talk again."
+--- !u!222 &1687833471
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687833468}
+  m_CullTransparentMesh: 0
+--- !u!114 &1687833472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687833468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbcdfe1c26579cd4ab93dfa63629ea00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textBox: {fileID: 1687833470}
+  text: ' '
+  done: 0
 --- !u!1001 &1693396793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16726,7 +16783,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Piccola Panetteria
 --- !u!222 &1897529763
 CanvasRenderer:
   m_ObjectHideFlags: 0
