@@ -11,7 +11,7 @@ public class MenuController : MonoBehaviour
         
     }
 
-    public void StartGame()
+    public void Update()
     {
         if (Input.anyKey)
         {
