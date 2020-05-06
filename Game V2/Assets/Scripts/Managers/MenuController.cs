@@ -13,6 +13,10 @@ public class MenuController : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Main");
+        if (Input.anyKey)
+        {
+            SceneManager.LoadScene("Main");
+        }
+        
     }
 }

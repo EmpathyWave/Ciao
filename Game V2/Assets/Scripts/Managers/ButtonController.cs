@@ -127,8 +127,6 @@ public class ButtonController : MonoBehaviour ///delete and rename input field a
         sounds.GetComponent<SoundController>().playPT = true;
         Global.me.currentLocation = Global.LocationState.Piazza;
         Global.me.moving = true;
-        sounds.GetComponent<SoundController>().playFoutain = true;
-        sounds.GetComponent<SoundController>().playChatter = true;
     }
     
     public void Docks()

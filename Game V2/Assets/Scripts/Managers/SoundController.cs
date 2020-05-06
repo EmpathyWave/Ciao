@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 
 public class SoundController : MonoBehaviour
@@ -9,7 +10,9 @@ public class SoundController : MonoBehaviour
     //add in puzzle theme
     //footsteps need the tutorial
     //add in hill area when it's in the game
-    
+    public StudioEventEmitter emitter;
+    //public string Event;
+
     [FMODUnity.EventRef]
     [Header("Music")]
     public string Theme = " ";
@@ -18,7 +21,6 @@ public class SoundController : MonoBehaviour
     FMOD.Studio.EventInstance theme;
     
     [FMODUnity.EventRef]
-    [Header("Music")]
     public string Puzzle = " ";
     public bool playP;
     public bool stopP;
@@ -184,6 +186,37 @@ public class SoundController : MonoBehaviour
             sweet.start();
         }
 
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            emitter.SetParameter("Layer 2",1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            emitter.SetParameter("Layer 3",1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            emitter.SetParameter("Layer 4",1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            emitter.SetParameter("Layer 5",1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            emitter.SetParameter("Layer 6",1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            emitter.SetParameter("Layer 7",1);
+        }
+        //if (Input.GetKeyDown(KeyCode.Alpha8))
+        //{
+            //emitter.
+           // emitter.SetParameter("PuzzleEnd",1);
+        //}
+        
+        //puzzle.setParameterByName("Layer 1", 1);
     }
 
     public bool PlayRnd(float low, float high)

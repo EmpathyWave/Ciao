@@ -14,7 +14,7 @@ namespace FMODUnity
             Texture browseIcon = EditorGUIUtility.Load("FMOD/SearchIconBlack.png") as Texture;
             Texture openIcon = EditorGUIUtility.Load("FMOD/BrowserIcon.png") as Texture;
             Texture addIcon = EditorGUIUtility.Load("FMOD/AddIcon.png") as Texture;
-                        
+
             EditorGUI.BeginProperty(position, label, property);
             SerializedProperty pathProperty = property;
 
@@ -80,7 +80,7 @@ namespace FMODUnity
 
             }
             if (GUI.Button(openRect, new GUIContent(openIcon, "Open In Browser"), buttonStyle) &&
-                !String.IsNullOrEmpty(pathProperty.stringValue) && 
+                !string.IsNullOrEmpty(pathProperty.stringValue) && 
                 EventManager.EventFromPath(pathProperty.stringValue) != null
                 )
             {
@@ -89,7 +89,7 @@ namespace FMODUnity
                 eventBrowser.JumpToEvent(pathProperty.stringValue);
             }
             
-            if (!String.IsNullOrEmpty(pathProperty.stringValue) && EventManager.EventFromPath(pathProperty.stringValue) != null)
+            if (!string.IsNullOrEmpty(pathProperty.stringValue) && EventManager.EventFromPath(pathProperty.stringValue) != null)
             {
                 Rect foldoutRect = new Rect(position.x + 10, position.y + baseHeight, position.width, baseHeight);
                 property.isExpanded = EditorGUI.Foldout(foldoutRect, property.isExpanded, "Event Properties");
@@ -102,8 +102,16 @@ namespace FMODUnity
                     Rect labelRect = new Rect(position.x, position.y + baseHeight * 2, width, baseHeight);
                     Rect valueRect = new Rect(position.x + width + 10, position.y + baseHeight * 2, pathRect.width, baseHeight);
 
-                    GUI.Label(labelRect, new GUIContent("<b>GUID</b>"), style);
-                    EditorGUI.SelectableLabel(valueRect, eventRef.Guid.ToString("b"));
+                    if (pathProperty.stringValue.StartsWith("{"))
+                    {
+                        GUI.Label(labelRect, new GUIContent("<b>Path</b>"), style);
+                        EditorGUI.SelectableLabel(valueRect, eventRef.Path);
+                    }
+                    else
+                    {
+                        GUI.Label(labelRect, new GUIContent("<b>GUID</b>"), style);
+                        EditorGUI.SelectableLabel(valueRect, eventRef.Guid.ToString("b"));
+                    }
                     labelRect.y += baseHeight;
                     valueRect.y += baseHeight;
 
@@ -141,8 +149,8 @@ namespace FMODUnity
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
-            bool expanded = property.isExpanded && !String.IsNullOrEmpty(property.stringValue) && EventManager.EventFromPath(property.stringValue) != null;
-            float baseHeight = GUI.skin.textField.CalcSize(new GUIContent()).y;            
+            bool expanded = property.isExpanded && !string.IsNullOrEmpty(property.stringValue) && EventManager.EventFromPath(property.stringValue) != null;
+            float baseHeight = GUI.skin.textField.CalcSize(new GUIContent()).y;
             return baseHeight * (expanded ? 7 : 2); // 6 lines of info
         }
     }

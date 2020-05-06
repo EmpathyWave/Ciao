@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using UnityEngine;
 using UnityEditor;
 
@@ -37,7 +36,7 @@ namespace FMODUnity
         public CreateEventPopup()
         {
         }
-        
+
         private void BuildTree()
         {
             var rootGuid = EditorUtils.GetScriptOutput("studio.project.workspace.masterEventFolder.id");
@@ -62,7 +61,7 @@ namespace FMODUnity
 
             banks.Sort((a, b) => a.name.CompareTo(b.name));
         }
-        
+
         private void BuildTreeItem(FolderEntry entry)
         {
             // lookup the entry
@@ -77,7 +76,7 @@ namespace FMODUnity
             for (int item = 0; item < itemCount; item++)
             {
                 EditorUtils.GetScriptOutput(String.Format("child = cur.items[{0}]", item));
-                
+
                 // check if it's a folder
                 string isFolder = EditorUtils.GetScriptOutput("child.isOfExactType(\"EventFolder\")");
                 if (isFolder == "false")
@@ -111,7 +110,7 @@ namespace FMODUnity
         Vector2 scrollPos = new Vector2();
         Rect scrollRect = new Rect();
         bool isConnected = false;
-        
+
         public void OnGUI()
         {
             var borderIcon = EditorGUIUtility.Load("FMOD/Border.png") as Texture2D;
@@ -141,12 +140,10 @@ namespace FMODUnity
             var arrowIcon = EditorGUIUtility.Load("FMOD/ArrowIcon.png") as Texture;
             var hoverIcon = EditorGUIUtility.Load("FMOD/SelectedAlt.png") as Texture2D;
             var titleIcon = EditorGUIUtility.Load("IN BigTitle") as Texture2D;
-            
-    
+
             var nextEntry = currentFolder;
 
             var filteredEntries = currentFolder.entries.FindAll((x) => x.name.StartsWith(currentFilter, StringComparison.CurrentCultureIgnoreCase));
-            
 
             // Process key strokes for the folder list
             {
@@ -184,12 +181,13 @@ namespace FMODUnity
                 {
                     if (Event.current.type == EventType.KeyDown)
                         if (currentFolder.parent != null)
+                        {
                             nextEntry = currentFolder.parent;
+                        }
                     Event.current.Use();
                 }
             }
 
-            
             bool disabled = eventName.Length == 0;
             EditorGUI.BeginDisabledGroup(disabled);
             if (GUILayout.Button("Create Event"))
@@ -222,7 +220,7 @@ namespace FMODUnity
                     updateEventPath = true;
                 }
             }
-            
+
             if (resetCursor)
             {
                 resetCursor = false;
@@ -245,14 +243,12 @@ namespace FMODUnity
                 bgRect.width = position.width-4;
                 GUI.Box(bgRect, GUIContent.none, bg);
 
-
                 Rect textureRect = currentRect;
                 textureRect.width = arrowIcon.width;
                 if (currentFolder.name != null)
                 {
                     GUI.DrawTextureWithTexCoords(textureRect, arrowIcon, new Rect(1, 1, -1, -1));
                 }
-
 
                 Rect labelRect = currentRect;
                 labelRect.x += arrowIcon.width + 50;
@@ -266,7 +262,7 @@ namespace FMODUnity
                     Event.current.Use();
                 }
             }
-            
+
             var normal = new GUIStyle(GUI.skin.label);
             normal.padding.left = 14;
             var hover = new GUIStyle(normal);
@@ -282,12 +278,12 @@ namespace FMODUnity
                 if ((rect.Contains(Event.current.mousePosition) && Event.current.type == EventType.MouseMove) || i == lastHover)
                 {
                     lastHover = i;
-                    
+
                     GUI.Label(rect, content, hover);
                     if (rect.Contains(Event.current.mousePosition) && Event.current.type == EventType.MouseDown)
                     {
                         nextEntry = entry;
-                    }                    
+                    }
                 }
                 else
                 {
@@ -322,14 +318,13 @@ namespace FMODUnity
             if (updateEventPath)
             {
                 UpdateListFromText();
-            }            
+            }
 
             if (Event.current.type == EventType.MouseMove)
             {
                 Repaint();
             }
-            
-        }        
+        }
 
         private void CreateEventInStudio()
         {

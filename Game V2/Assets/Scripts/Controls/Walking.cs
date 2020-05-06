@@ -24,6 +24,8 @@ public class Walking : MonoBehaviour
     private bool talk = false;
 
     private GameObject currentChar;
+    private Vector2 rightVel;
+    private Vector2 leftVel;
     
     //public GameObject sounds;
 
@@ -52,15 +54,6 @@ public class Walking : MonoBehaviour
 
     void Check()
     {
-        if (speed > maxSpeed)
-        {
-            speed = maxSpeed;
-        }
-
-        if (speed < minSpeed)
-        {
-            speed = minSpeed;
-        }
     }
 
     void Controls()
@@ -70,23 +63,42 @@ public class Walking : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) //left
         {
-            //speed += scale;
+            //speed += scale;;
             rb.constraints = RigidbodyConstraints2D.None;
-            rb.velocity = transform.TransformVector(-1.5f,0,0) * speed;
+            leftVel = transform.TransformVector(-1f,0,0) * speed;
+            if (rb.velocity.x < -6)
+            {
+                rb.velocity = new Vector2(-6f, rb.velocity.y);
+            }
+            else
+            {
+                rb.velocity += leftVel;
+            }
+            //rb.velocity += leftVel;
             animator.SetBool("IsWalkingL", true);
 
         } 
         else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //right
         {
             rb.constraints = RigidbodyConstraints2D.None;
-            rb.velocity = transform.TransformVector(1.5f, 0, 0) * speed;
+            rightVel = transform.TransformVector(1f, 0, 0) * speed;
+            if (rb.velocity.x > 6f)
+            {
+                rb.velocity = new Vector2(6f, rb.velocity.y);
+            }
+            else
+            {
+                rb.velocity += rightVel;
+            }
+            Debug.Log(rb.velocity);
             animator.SetBool("IsWalkingR", true);
             //speed += scale;
             //rb.velocity = Vector2.right * speed * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.J) || Input.GetKey(KeyCode.Tab))
+        if (Input.GetKeyUp(KeyCode.J) || Input.GetKeyUp(KeyCode.Tab))
         {
+            
             //global.GetComponent<Global>().prevGS = Global.GameState.Viewing;
             sounds.GetComponent<SoundController>().playPT = true;
             global.GetComponent<Global>().currentUIS = Global.UIState.LargeMap;
@@ -94,17 +106,21 @@ public class Walking : MonoBehaviour
             
         }
 
+        //i think this is the problem
         if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow))
         {
+            rb.velocity = new Vector2(0,0);
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
             animator.SetBool("IsWalkingR", false);
 
         }
         else if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
         {
+            rb.velocity = new Vector2(0,0);
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
             animator.SetBool("IsWalkingL", false);
         }
+        
         if(talk && Input.GetKeyUp(KeyCode.E))
         {
             Global.me.currentGS = Global.GameState.Selecting;
