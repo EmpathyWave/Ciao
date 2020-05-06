@@ -22,8 +22,9 @@ public class Intro : MonoBehaviour
     public String line2 = "I know you don’t know each other but I called him and he seems excited to see his niece, maybe he can bake you some of his famous focaccia!";
     public String line3 = "It’s a lovely little town, it will be nice to get away from the city for awhile. Your grandfather loved that place and you can visit the bakery and understand why it means so much to him. It’s been a long time since they spoke, hopefully you can be the reason for them to talk again.";
     public String line4 = "Your things are already at the hotel, it’s just a week so try to enjoy it while you can. Get acquainted with the town, everyone is very welcoming.";
-    public String line5 = "I love you honey, have a good time. Try to get that focaccia recipe!";
-    
+    public String line5 = "I love you honey, get to know the town. Try to get that focaccia recipe!";
+
+    public GameObject sounds;
     public GameObject box;
     public GameObject background;
     public GameObject canvas;
@@ -31,6 +32,7 @@ public class Intro : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        //sounds.GetComponent<SoundController>().playP = true;
         canvas.gameObject.SetActive(true);
         background.gameObject.SetActive(true);
         box.gameObject.SetActive(true);
@@ -97,6 +99,7 @@ public class Intro : MonoBehaviour
                 line5Done = true;
                 StopCoroutine(box.GetComponent<TypingEffect>().AnimateText());
                 box.GetComponent<TypingEffect>().text = " ";
+                sounds.GetComponent<SoundController>().playT = false;
             }
         }
         

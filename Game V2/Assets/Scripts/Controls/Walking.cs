@@ -8,7 +8,7 @@ public class Walking : MonoBehaviour
 //janky ass system to get walking working in the game
 //please help me
 {
-
+    public GameObject sounds;
     public float maxSpeed;
     public float minSpeed;
     public float speed;
@@ -25,10 +25,11 @@ public class Walking : MonoBehaviour
 
     private GameObject currentChar;
     
+    //public GameObject sounds;
 
     void Start()
     {
-        //speed = minSpeed;
+        sounds.GetComponent<SoundController>().playOcean = true;
         rb = GetComponent<Rigidbody2D>();
         global = GameObject.Find("Game Manager");
         map = GameObject.Find("Map Manager");
@@ -84,9 +85,10 @@ public class Walking : MonoBehaviour
             //rb.velocity = Vector2.right * speed * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.J))
+        if (Input.GetKey(KeyCode.J) || Input.GetKey(KeyCode.Tab))
         {
             //global.GetComponent<Global>().prevGS = Global.GameState.Viewing;
+            sounds.GetComponent<SoundController>().playPT = true;
             global.GetComponent<Global>().currentUIS = Global.UIState.LargeMap;
             global.GetComponent<Global>().currentGS = Global.GameState.Viewing;
             
@@ -111,6 +113,7 @@ public class Walking : MonoBehaviour
             Global.me.currentUIS = Global.UIState.LargeMap;
             map.GetComponent<MapController>().current_char = currentChar.tag;
             story.GetComponent<StoryController>().SetKnot(currentChar.tag, "Default_");
+            sounds.GetComponent<SoundController>().playPT = true;
         }
     }
     
@@ -145,7 +148,5 @@ public class Walking : MonoBehaviour
 
         currentChar = null;
     }
-    
-    
 }
 

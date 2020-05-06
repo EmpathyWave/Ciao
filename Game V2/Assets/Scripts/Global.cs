@@ -10,6 +10,8 @@ public class Global : MonoBehaviour
 
    public bool asked = false;
 
+   public bool moving = false;
+
    //STATE MACHINES
    public enum GameState //Dom State
    {
@@ -38,7 +40,6 @@ public class Global : MonoBehaviour
    };
    
    public GameState currentGS;
-   //public GameState prevGS; 
    public UIState currentUIS;
 
    public LocationState currentLocation;
@@ -53,7 +54,6 @@ public class Global : MonoBehaviour
    void Start() //defaulting
    {
       currentGS = GameState.Walking;
-      //prevGS = GameState.Walking;
       currentUIS = UIState.Walking;
    }
 }

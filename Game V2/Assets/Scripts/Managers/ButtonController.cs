@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour ///delete and rename input field and button handler 
 {
+    public GameObject sounds;
+    
     bool asked = false;
     public GameObject map;
     // Start is called before the first frame update
@@ -18,6 +20,7 @@ public class ButtonController : MonoBehaviour ///delete and rename input field a
 
     public void ButtonHandler(Button button) //sends up the button name to the story input
     {
+        sounds.GetComponent<SoundController>().playAddQ = true;
         Debug.Log("clicked");
         if (map.GetComponent<MapController>().input_num == 0)
         {
@@ -111,49 +114,63 @@ public class ButtonController : MonoBehaviour ///delete and rename input field a
     public void Ask() 
     {
         Global.me.asked = true;
+        sounds.GetComponent<SoundController>().playAskQ = true;
     }
 
     public void Piazza()
     {
+        sounds.GetComponent<SoundController>().playPT = true;
         Global.me.currentUIS = Global.UIState.Piazza;
     }
     public void PiazzaMov()
     {
+        sounds.GetComponent<SoundController>().playPT = true;
         Global.me.currentLocation = Global.LocationState.Piazza;
+        Global.me.moving = true;
+        sounds.GetComponent<SoundController>().playFoutain = true;
+        sounds.GetComponent<SoundController>().playChatter = true;
     }
     
     public void Docks()
     {
-        //Debug.Log("UI");
+        sounds.GetComponent<SoundController>().playPT = true;
         Global.me.currentUIS = Global.UIState.Docks;
     }
 
     public void DocksMov()
     {
+        sounds.GetComponent<SoundController>().playPT = true;
         Global.me.currentLocation = Global.LocationState.Docks;
+        Global.me.moving = true;
     }
     
     public void Hill()
     {
+        sounds.GetComponent<SoundController>().playPT = true;
         Global.me.currentUIS = Global.UIState.Hill;
     }
     public void HillsMov()
     {
+        sounds.GetComponent<SoundController>().playPT = true;
         Global.me.currentLocation = Global.LocationState.Hills;
+        Global.me.moving = true;
     }
     
     public void tree()
     {
+        sounds.GetComponent<SoundController>().playPT = true;
         Global.me.currentUIS = Global.UIState.Tree;
     }
     
     public void Timeline()
     {
+        sounds.GetComponent<SoundController>().playPT = true;
         Global.me.currentUIS = Global.UIState.Timeline;
     }
     
     public void LargeMap()
     {
+        sounds.GetComponent<SoundController>().playPT = true;
         Global.me.currentUIS = Global.UIState.LargeMap;
     }
 }
