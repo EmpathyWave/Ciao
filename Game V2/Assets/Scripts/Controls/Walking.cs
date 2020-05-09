@@ -33,6 +33,10 @@ public class Walking : MonoBehaviour
     public float timer = -1;
     private float stepTime = .38f;
 
+    public GameObject helpScreen;
+    public GameObject canvasing;
+    public bool tutorial; 
+
     //public GameObject sounds;
 
     void Start()
@@ -47,7 +51,7 @@ public class Walking : MonoBehaviour
     //update put controls
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) && tutorial == false)
         {
             facingLeft = true;
             animator.SetBool("IsWalkingL", true);
@@ -58,7 +62,7 @@ public class Walking : MonoBehaviour
             //moving = true;
         }
         
-        if (Input.GetKeyDown(KeyCode.D)) //right
+        if ((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) && tutorial == false) //right
         {
             facingRight = true;
             facingLeft = false;
@@ -68,20 +72,33 @@ public class Walking : MonoBehaviour
             //moving= true;
         }
         
-        if (Input.GetKeyUp(KeyCode.A))
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
         {
             facingLeft = false;
             timer = stepTime;
             //movingRight = false;
             //moving = false;
         } 
-        if (Input.GetKeyUp(KeyCode.D))
+        if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow))
         {
             facingRight = false;
             timer = stepTime;
             //movingLeft = false;
             //moving = false;
         }
+
+        if (Input.GetKeyUp(KeyCode.Escape) && tutorial == false)
+        {
+            canvasing.SetActive(true);
+            helpScreen.SetActive(true);
+            tutorial = true;
+        }else if (Input.GetKeyUp(KeyCode.Escape) && tutorial)
+        {
+            helpScreen.SetActive(false);
+            canvasing.SetActive(false);
+            tutorial = false;
+        }
+        
 
     }
     

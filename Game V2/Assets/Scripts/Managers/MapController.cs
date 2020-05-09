@@ -97,8 +97,11 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
             SControls();
             TextUpdate();
         }
-        else //walking mode
+        else if (girl.GetComponent<Walking>().tutorial)
         {
+            UIActivate();
+        } //walking mode
+        else{
             UIDeactivate();
             //deactivate notes but save all text 
         }
