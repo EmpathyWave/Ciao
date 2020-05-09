@@ -26,12 +26,9 @@ public class Walking : MonoBehaviour
     private GameObject currentChar;
     private Vector2 rightVel;
     private Vector2 leftVel;
-
-    public bool movingLeft;
-    public bool movingRight;
+    
     public bool facingRight;
     public bool facingLeft;
-    public bool moving;
 
     public float timer = -1;
     private float stepTime = .38f;

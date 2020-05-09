@@ -219,7 +219,7 @@ public class SoundController : MonoBehaviour
         if (playEnviro)
         {
             enviro.start();
-            playFoutain = false;
+            playEnviro = false;
         }
         if (stopEnviro)
         {
@@ -270,11 +270,10 @@ public class SoundController : MonoBehaviour
         {
             emitter.SetParameter("Layer 7",1);
         }
-        //if (Input.GetKeyDown(KeyCode.Alpha8))
-        //{
-            //emitter.
-           // emitter.SetParameter("PuzzleEnd",1);
-        //}
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            emitter.SetParameter("PuzzleEnd",1);
+        }
         
         //puzzle.setParameterByName("Layer 1", 1);
         

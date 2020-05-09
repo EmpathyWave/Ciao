@@ -15,8 +15,8 @@ public class Spawning : MonoBehaviour
     
     void Start()
     {
-        timer1 = Random.Range(5f, 10f);
-        timer2 = Random.Range(5f, 10f);
+        timer1 = Random.Range(3f, 8f);
+        timer2 = Random.Range(3f, 8f);
     }
     
     void Update()
@@ -27,8 +27,8 @@ public class Spawning : MonoBehaviour
             sounds.GetComponent<SoundController>().stopChatter = true;
             sounds.GetComponent<SoundController>().stopEnviro = true;
             sounds.GetComponent<SoundController>().playOcean = true;
-            timer1 = Random.Range(15f, 27f);
-            timer2 = Random.Range(15f, 27f);
+            timer1 = Random.Range(3f, 8f);
+            timer2 = Random.Range(3f, 8f);
             girl.transform.position = docks.position;
             Global.me.moving = false;
         }
@@ -39,8 +39,8 @@ public class Spawning : MonoBehaviour
             sounds.GetComponent<SoundController>().stopChatter = true;
             sounds.GetComponent<SoundController>().stopOcean = true;
             sounds.GetComponent<SoundController>().playEnviro = true;
-            timer1 = Random.Range(15f, 27f);
-            timer2 = Random.Range(15f, 27f);
+            timer1 = Random.Range(3f, 8f);
+            timer2 = Random.Range(3f, 8f);
             //sounds.GetComponent<SoundController>().stopOcean = true;
             girl.transform.position = hills.position;
             Global.me.moving = false;
@@ -52,8 +52,8 @@ public class Spawning : MonoBehaviour
             sounds.GetComponent<SoundController>().playChatter = true;
             sounds.GetComponent<SoundController>().stopEnviro = true;
             sounds.GetComponent<SoundController>().stopOcean = true;
-            timer1 = Random.Range(15f, 27f);
-            timer2 = Random.Range(15f, 27f);
+            timer1 = Random.Range(3f, 8f);
+            timer2 = Random.Range(3f, 8f);
             girl.transform.position = piazza.position;
             Global.me.moving = false;
         }
@@ -96,7 +96,7 @@ public class Spawning : MonoBehaviour
             if (timer1 < 0)
             {
                 sounds.GetComponent<SoundController>().playSeagull = true;
-                timer1 = Random.Range(5f, 15f);
+                timer1 = Random.Range(3f, 7f);
             }
         }
     }
