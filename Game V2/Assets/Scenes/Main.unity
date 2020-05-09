@@ -1126,7 +1126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &135487303
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2012,6 +2012,12 @@ MonoBehaviour:
   map: {fileID: 1679986021}
   story: {fileID: 818131959}
   rb: {fileID: 229358520}
+  movingLeft: 0
+  movingRight: 0
+  facingRight: 0
+  facingLeft: 0
+  moving: 0
+  timer: 0
 --- !u!212 &229358522
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2087,7 +2093,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -675.8354, y: -1.52}
+  m_AnchoredPosition: {x: -644.6898, y: -1.65}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &229358525
@@ -4610,7 +4616,7 @@ PrefabInstance:
     - target: {fileID: 3770185586703512191, guid: 572ef9811b203ec4ba87814bcc4cb3e5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 912.3
+      value: 900.27
       objectReference: {fileID: 0}
     - target: {fileID: 3770185586703512191, guid: 572ef9811b203ec4ba87814bcc4cb3e5,
         type: 3}
@@ -4970,7 +4976,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -675.92, y: 0.58, z: -10}
+  m_LocalPosition: {x: -644.5646, y: 0.58, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5477,6 +5483,15 @@ MonoBehaviour:
   stopChatter: 0
   Sweet: event:/Town/Town Sweeteners
   playSweet: 0
+  Enviro: event:/Hills/Enviorment Loops
+  playEnviro: 0
+  stopEnviro: 0
+  Birds: event:/Hills/Birds
+  playBirds: 0
+  Sweeties: event:/Hills/Hills Sweeteners
+  playSweeties: 0
+  Step: event:/Player/footsteps_stone
+  playStep: 0
 --- !u!114 &579184954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6002,6 +6017,7 @@ GameObject:
   - component: {fileID: 631599771}
   - component: {fileID: 631599772}
   - component: {fileID: 631599774}
+  - component: {fileID: 631599773}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -6039,8 +6055,45 @@ MonoBehaviour:
   moving: 0
   currentGS: 0
   currentUIS: 0
-  currentLocation: 0
+  currentLocation: 1
   puzzle1: 0
+--- !u!114 &631599773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631599770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d16170ae5da3c49a2b53022cf63aab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerOne: 150
+  timerTwo: 200
+  timerThree: 400
+  timerFour: 200
+  timerFive: 150
+  line1Done: 0
+  line2Done: 0
+  line3Done: 0
+  line4Done: 0
+  line5Done: 0
+  line1: "Your father and I think it\u2019s time for you to know your roots and visit
+    your Uncle Lucca."
+  line2: "I know you don\u2019t know each other but I called him and he seems excited
+    to see his niece, maybe he can bake you some of his famous focaccia!"
+  line3: "It\u2019s a lovely little town, it will be nice to get away from the city
+    for awhile. Your grandfather loved that place and you can visit the bakery and
+    understand why it means so much to him. It\u2019s been a long time since they
+    spoke, hopefully you can be the reason for them to talk again."
+  line4: "Your things are already at the hotel, it\u2019s just a week so try to enjoy
+    it while you can. Get acquainted with the town, everyone is very welcoming."
+  line5: I love you honey, get to know the town. Try to get that focaccia recipe!
+  sounds: {fileID: 0}
+  box: {fileID: 0}
+  background: {fileID: 0}
+  canvas: {fileID: 0}
 --- !u!114 &631599774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6058,6 +6111,8 @@ MonoBehaviour:
   hills: {fileID: 1545925425}
   piazza: {fileID: 1372443661}
   sounds: {fileID: 579184952}
+  timer1: 0
+  timer2: 0
 --- !u!1 &675537288
 GameObject:
   m_ObjectHideFlags: 0
@@ -7758,7 +7813,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -34.13, y: -282.46}
+  m_AnchoredPosition: {x: -34.129883, y: -282.46}
   m_SizeDelta: {x: 45.8, y: 129.3}
   m_Pivot: {x: 0.5000084, y: 0.49999994}
 --- !u!114 &820224463
@@ -9636,7 +9691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1077006384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12097,6 +12152,8 @@ GameObject:
   - component: {fileID: 1379034347}
   - component: {fileID: 1379034349}
   - component: {fileID: 1379034348}
+  - component: {fileID: 1379034350}
+  - component: {fileID: 1379034351}
   m_Layer: 5
   m_Name: Topground
   m_TagString: Untagged
@@ -12160,6 +12217,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1379034346}
   m_CullTransparentMesh: 0
+--- !u!114 &1379034350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379034346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a343c6e0abbe24c4b87be9d9483339da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  baseT: 1
+  cg: {fileID: 1379034351}
+--- !u!225 &1379034351
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379034346}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1390164605
 GameObject:
   m_ObjectHideFlags: 0
@@ -13204,6 +13288,7 @@ Transform:
   - {fileID: 773382235}
   - {fileID: 1887215416}
   - {fileID: 1443022431}
+  - {fileID: 2095105626}
   m_Father: {fileID: 1463792094}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13711,7 +13796,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1679986024}
         m_MethodName: Ask
         m_Mode: 1
         m_Arguments:
@@ -13772,6 +13857,7 @@ GameObject:
   - component: {fileID: 1543795007}
   - component: {fileID: 1543795009}
   - component: {fileID: 1543795008}
+  - component: {fileID: 1543795010}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -13795,8 +13881,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -3.74}
-  m_SizeDelta: {x: 218.7, y: 38.6}
+  m_AnchoredPosition: {x: 2.8, y: -5.42}
+  m_SizeDelta: {x: 215, y: 35.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1543795008
 MonoBehaviour:
@@ -13820,12 +13906,12 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 75cf99b428c38714999f5736f3daf636, type: 3}
-    m_FontSize: 9
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -13840,6 +13926,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543795006}
   m_CullTransparentMesh: 0
+--- !u!114 &1543795010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543795006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbcdfe1c26579cd4ab93dfa63629ea00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: {fileID: 579184952}
+  textBox: {fileID: 1543795008}
+  text: ' '
+  prevText: ' '
+  done: 0
 --- !u!1 &1545925424
 GameObject:
   m_ObjectHideFlags: 0
@@ -14853,6 +14956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1077006383}
+  sounds: {fileID: 579184952}
   mapT: {fileID: 525721640}
   timeT: {fileID: 820224461}
   treeT: {fileID: 1356505389}
@@ -14919,7 +15023,7 @@ MonoBehaviour:
   story_input1: 
   story_input2: 
   q_box: {fileID: 1491921193}
-  d_box: {fileID: 135487302}
+  d_box: {fileID: 1543795006}
   input_num: 0
   story: {fileID: 818131959}
   girl: {fileID: 229358519}
@@ -14949,6 +15053,8 @@ GameObject:
   - component: {fileID: 1687833471}
   - component: {fileID: 1687833472}
   - component: {fileID: 1687833470}
+  - component: {fileID: 1687833474}
+  - component: {fileID: 1687833473}
   m_Layer: 5
   m_Name: Textbox
   m_TagString: Untagged
@@ -15008,10 +15114,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "It\x19s a lovely little town, it will be nice to get away from the city
-    for awhile. \n\nYour grandfather loved that place and you can visit the bakery
-    and understand why it means so much to him. \n\nIt\x19s been a long time since
-    they spoke, hopefully you can be the reason for them to talk again."
+  m_Text: 
 --- !u!222 &1687833471
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15032,11 +15135,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbcdfe1c26579cd4ab93dfa63629ea00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: {fileID: 0}
+  sounds: {fileID: 579184952}
   textBox: {fileID: 1687833470}
   text: ' '
   prevText: ' '
   done: 0
+--- !u!114 &1687833473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687833468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a343c6e0abbe24c4b87be9d9483339da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  baseT: 1
+  cg: {fileID: 1687833474}
+--- !u!225 &1687833474
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687833468}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1731660471
 GameObject:
   m_ObjectHideFlags: 0
@@ -16646,7 +16776,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 916.2, y: -232.1}
+  m_AnchoredPosition: {x: 880.2, y: -232.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1974893835
@@ -17501,6 +17631,63 @@ Transform:
   m_Father: {fileID: 260971470}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2095105625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2095105626}
+  - component: {fileID: 2095105627}
+  m_Layer: 0
+  m_Name: Assets-01 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2095105626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095105625}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 28.76, y: -4.160001, z: 32.507385}
+  m_LocalScale: {x: 0.40500006, y: 0.60181004, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1514657321}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2095105627
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095105625}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.51, y: 5.51}
+    newSize: {x: 5.51, y: 5.51}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.51, y: 5.51}
+  m_EdgeRadius: 0
 --- !u!1 &2114683530
 GameObject:
   m_ObjectHideFlags: 0
@@ -17857,7 +18044,7 @@ PrefabInstance:
     - target: {fileID: 3770185586703512191, guid: 572ef9811b203ec4ba87814bcc4cb3e5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 889.3
+      value: 885.26
       objectReference: {fileID: 0}
     - target: {fileID: 3770185586703512191, guid: 572ef9811b203ec4ba87814bcc4cb3e5,
         type: 3}

@@ -9,13 +9,13 @@ public class Fader : MonoBehaviour
     //public bool fadeIn = false;
     //public bool fadeOut = false;
 
-    private SpriteRenderer rend;
+    public CanvasGroup cg;
     
     // Start is called before the first frame update
     void Start()
     {
         timer = baseT;
-        rend = this.gameObject.GetComponent<SpriteRenderer>();
+        cg = this.gameObject.GetComponent<CanvasGroup>();
     }
 
     // Update is called once per frame
@@ -42,53 +42,38 @@ public class Fader : MonoBehaviour
             //respond = true;
         }
 
-        if (rend.material.color.a == 1 && fadeIn)
-        {
-            fadeIn = false;
-            StopCoroutine("FadeIn");
-            //stop all coroutines
-            //continue thing
-        }
-
-        if (rend.material.color.a == 0 && fadeOut)
-        {
-            fadeIn = false;
-            StopCoroutine("FadeOut");
-        }
-            
     }
 
     IEnumerator FadeIn()
     {
         for (float f = 0.05f; f <= 1; f += 0.05f)
         {
-            Color c = rend.material.color;
-            c.a = f;
-            rend.material.color = c;
+            //Color c = rend.GetColor();
+            cg.alpha = f;
+            //rend.SetColor(c);
             
             yield return new WaitForSeconds(0.1f);
         }
-        Color d = rend.material.color;
-        d.a = 1;
-        rend.material.color = d;
+        //Color d = rend.GetColor();
+        //d.a = 1;
+        cg.alpha = 1;
         //respond = true;
     }
-    
     
     
     IEnumerator FadeOut()
     {
         for (float f = 1f; f >= 0; f -= 0.05f)
         {
-            Color c = rend.material.color;
-            c.a = f;
-            rend.material.color = c;
+            //Color c = rend.GetColor();
+            cg.alpha = f;
+            //rend.SetColor(c);
             
             yield return new WaitForSeconds(0.1f);
         }
-        Color d = rend.material.color;
-        d.a = 0;
-        rend.material.color = d;
+        //Color d = rend.GetColor();
+        //d.a = 0;
+        cg.alpha = 0;
         //respond = true;
     }
 }

@@ -24,7 +24,7 @@ public class TypingEffect : MonoBehaviour
     //StartCoroutine(AnimateText());
     public void Update()
     {
-        if (prevText != text)
+        if (prevText != text && text != "")
         {
             sounds.GetComponent<SoundController>().playTS = true;
             StartCoroutine(AnimateText());
@@ -42,9 +42,10 @@ public class TypingEffect : MonoBehaviour
             {
                 //Debug.Log("done");
             }
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(.020f);
         }
         sounds.GetComponent<SoundController>().stopTS = true;
+        
     }
 }
 

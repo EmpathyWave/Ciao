@@ -115,6 +115,7 @@ public class ButtonController : MonoBehaviour ///delete and rename input field a
     {
         Global.me.asked = true;
         sounds.GetComponent<SoundController>().playAskQ = true;
+        //sounds.GetComponent<SoundController>().playTS = true;
     }
 
     public void Piazza()

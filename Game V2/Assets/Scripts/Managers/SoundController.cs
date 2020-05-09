@@ -47,6 +47,7 @@ public class SoundController : MonoBehaviour
     public bool playTS;
     public bool stopTS;
     FMOD.Studio.EventInstance textScroll;
+    //public FMOD.Studio.EventInstance end;
     
     
     [Header("Docks")]
@@ -56,7 +57,7 @@ public class SoundController : MonoBehaviour
     public bool stopOcean;
     FMOD.Studio.EventInstance ocean;
     [FMODUnity.EventRef]
-    public string Seagull = " ";
+    public string Seagull = " "; //randomize
     public bool playSeagull;
     //public bool stopSeagull;
     FMOD.Studio.EventInstance seagull;
@@ -73,10 +74,31 @@ public class SoundController : MonoBehaviour
     public bool stopChatter;
     FMOD.Studio.EventInstance chatter;
     [FMODUnity.EventRef]
-    public string Sweet = " ";
+    public string Sweet = " "; //randomize
     public bool playSweet;
-    FMOD.Studio.EventInstance sweet;
+    FMOD.Studio.EventInstance sweet; 
     
+    
+    [FMODUnity.EventRef]
+    [Header("Hills")]
+    public string Enviro = " ";
+    public bool playEnviro;
+    public bool stopEnviro;
+    FMOD.Studio.EventInstance enviro;
+    [FMODUnity.EventRef]
+    public string Birds = " "; //randomize
+    public bool playBirds;
+    FMOD.Studio.EventInstance birds;
+    [FMODUnity.EventRef]
+    public string Sweeties = " "; //randomize
+    public bool playSweeties;
+    FMOD.Studio.EventInstance sweeties;
+    
+    [FMODUnity.EventRef]
+    [Header("Footsteps")]
+    public string Step = " ";
+    public bool playStep;
+    FMOD.Studio.EventInstance step;
     
     //private FMOD.Studio.PLAYBACK_STATE playbackState;
     
@@ -88,6 +110,7 @@ public class SoundController : MonoBehaviour
         addQ = FMODUnity.RuntimeManager.CreateInstance(AddQ);
         askQ = FMODUnity.RuntimeManager.CreateInstance(AskQ);
         textScroll = FMODUnity.RuntimeManager.CreateInstance(TextScroll);
+        //textScroll.getParameterByName("Textscroll End", out end);
         //textEnd = FMODUnity.RuntimeManager.CreateInstance(TextEnd);
         ocean = FMODUnity.RuntimeManager.CreateInstance(Ocean);
         //wind = FMODUnity.RuntimeManager.CreateInstance(Wind);
@@ -95,6 +118,10 @@ public class SoundController : MonoBehaviour
         foutain = FMODUnity.RuntimeManager.CreateInstance(Foutain);
         chatter = FMODUnity.RuntimeManager.CreateInstance(Chatter);
         sweet = FMODUnity.RuntimeManager.CreateInstance(Sweet);
+        enviro = FMODUnity.RuntimeManager.CreateInstance(Enviro);
+        birds = FMODUnity.RuntimeManager.CreateInstance(Birds);
+        sweeties = FMODUnity.RuntimeManager.CreateInstance(Sweeties);
+        step = FMODUnity.RuntimeManager.CreateInstance(Step);
         //clock = FMODUnity.RuntimeManager.CreateInstance(Clock);
         //birds = FMODUnity.RuntimeManager.CreateInstance(Birds);
     }
@@ -130,12 +157,13 @@ public class SoundController : MonoBehaviour
         
         if (playTS)
         {
+            textScroll.setParameterByName("Textscroll End", 0f);
             textScroll.start();
-            playAddQ = false;
+            playTS = false;
         }
         if (stopTS)
         {
-            textScroll.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            textScroll.setParameterByName("Textscroll End", 1f); //SetParameter("Textscroll End",1);;
             stopTS = false;
         }
         
@@ -184,6 +212,38 @@ public class SoundController : MonoBehaviour
         if (playSweet)
         {
             sweet.start();
+            playSweet = false;
+        }
+        
+        //hills -------------------------------------------------------
+        if (playEnviro)
+        {
+            enviro.start();
+            playFoutain = false;
+        }
+        if (stopEnviro)
+        {
+            enviro.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            stopEnviro = false;
+        }
+
+        if (playBirds)
+        {
+            birds.start();
+            playBirds = false;
+        }
+        
+        if (playSweeties)
+        {
+            sweeties.start();
+            playSweeties = false;
+        }
+        
+        //-----------------------------------------------------------
+        if (playStep)
+        {
+            step.start();
+            playStep = false;
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -217,15 +277,8 @@ public class SoundController : MonoBehaviour
         //}
         
         //puzzle.setParameterByName("Layer 1", 1);
+        
+        
     }
-
-    public bool PlayRnd(float low, float high)
-    {
-        float timer = Random.Range(low, high);
-        while (timer > 0)
-        {
-            timer -= Time.deltaTime;
-        }
-        return true;
-    }
+    
 }

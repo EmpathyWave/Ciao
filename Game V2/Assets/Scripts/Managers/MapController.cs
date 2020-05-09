@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class MapController : MonoBehaviour //handles all the UI elements when navigating the map and Timeline and even the story
 {
     public GameObject canvas;
+    public GameObject sounds;
     
     [Header("Tabs")] 
     public GameObject mapT;
@@ -387,12 +388,15 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
         
         //story.GetComponent<StoryController>().SetKnot(current_char, "Default_");
         story_output = story.GetComponent<StoryController>().output;
-        d_box.GetComponentInChildren<Text>().text = story_output;
+        d_box.GetComponentInChildren<TypingEffect>().text = story_output;
 
         if (Input.GetKey(KeyCode.Escape)) //exists out of convo
         {
-            d_box.GetComponentInChildren<Text>().text = "";
+            d_box.GetComponentInChildren<TypingEffect>().text = "";
+            d_box.GetComponentInChildren<TypingEffect>().prevText = "";
+            sounds.GetComponent<SoundController>().stopTS = true;
             q_box.GetComponentInChildren<Text>().text = "";
+            
             story_output = "";
             
                 for (int i = 0; i < tButtons.Length; i++) //resets buttons
