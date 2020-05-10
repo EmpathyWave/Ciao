@@ -1,0 +1,627 @@
+fileFormatVersion: 2
+guid: b3b2b5a9de5254ad79e4194850e64430
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5083195468268724199
+    second: SS_DFTDanniWalk_L_0
+  - first:
+      213: -8542665981442275226
+    second: SS_DFTDanniWalk_L_1
+  - first:
+      213: 3566894070744041149
+    second: SS_DFTDanniWalk_L_2
+  - first:
+      213: -4378446935709407139
+    second: SS_DFTDanniWalk_L_3
+  - first:
+      213: -4901726577826446730
+    second: SS_DFTDanniWalk_L_4
+  - first:
+      213: 653946855145152892
+    second: SS_DFTDanniWalk_L_5
+  - first:
+      213: 7713421286974172198
+    second: SS_DFTDanniWalk_L_6
+  - first:
+      213: 119726211492956362
+    second: SS_DFTDanniWalk_L_7
+  - first:
+      213: -5299687763540471871
+    second: SS_DFTDanniWalk_L_8
+  - first:
+      213: -5015196054986365856
+    second: SS_DFTDanniWalk_L_9
+  - first:
+      213: -151209707914505452
+    second: SS_DFTDanniWalk_L_10
+  - first:
+      213: 8172266530824389857
+    second: SS_DFTDanniWalk_L_11
+  - first:
+      213: -8358783243942433406
+    second: SS_DFTDanniWalk_L_12
+  - first:
+      213: 3868377815809752780
+    second: SS_DFTDanniWalk_L_13
+  - first:
+      213: -5141271918889575192
+    second: SS_DFTDanniWalk_L_14
+  - first:
+      213: 7621104040644307915
+    second: SS_DFTDanniWalk_L_15
+  - first:
+      213: -3817569327008910692
+    second: SS_DFTDanniWalk_L_16
+  - first:
+      213: -8085056312844692505
+    second: SS_DFTDanniWalk_L_17
+  - first:
+      213: 4501686251368241592
+    second: SS_DFTDanniWalk_L_18
+  - first:
+      213: 4874902534604205942
+    second: SS_DFTDanniWalk_L_19
+  - first:
+      213: -6706158372462864969
+    second: SS_DFTDanniWalk_L_20
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1648
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84a434225bda434fa48c103335f2fdd
+      internalID: -5083195468268724199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1648
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78de712943b2046ff9b2938a7008c470
+      internalID: -8542665981442275226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_2
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1648
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a6e6b13b4db4e028f9cc5aa63a280c
+      internalID: 3566894070744041149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1648
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e494781c10764dc2bf840c908a494c7
+      internalID: -4378446935709407139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_4
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1648
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778f56dbfa6614deb8ddd45da46e7724
+      internalID: -4901726577826446730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1248
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5d7ca3074da4c33a92e1cf1018d66f
+      internalID: 653946855145152892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1248
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7850726353d1147a2aa04b6d2ea40d2a
+      internalID: 7713421286974172198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_7
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1248
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb99e37b3421434caf88e59330c431c
+      internalID: 119726211492956362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1248
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4f13c2c22c3419c8db436d6b91c1a9
+      internalID: -5299687763540471871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_9
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1248
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc0e462a953a4a728d6da72dbc65484
+      internalID: -5015196054986365856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 848
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7b0784aaf3a4ec3a376699e6aec45d
+      internalID: -151209707914505452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_11
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 848
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12de155a2730941008267f3dba1ec117
+      internalID: 8172266530824389857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_12
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 848
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408d77610c7164e46872d5527e32955d
+      internalID: -8358783243942433406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 848
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c728458227f4e7ca300c2dd6c90ca4
+      internalID: 3868377815809752780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_14
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 848
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62171ff2801b34b669ddb2c39d97be89
+      internalID: -5141271918889575192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e31396c50a742df96e783e8f9c5ff5
+      internalID: 7621104040644307915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 448
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2dee520947e48adbe2208a88f70cf2
+      internalID: -3817569327008910692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_17
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 448
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a655bfdf7dd46c5b48f922da5b2510
+      internalID: -8085056312844692505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_18
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 448
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb545882c0ee449db2d91aece50e580
+      internalID: 4501686251368241592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_19
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 448
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5a80b3a4c8a4875a706f84c27fd3b7
+      internalID: 4874902534604205942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_DFTDanniWalk_L_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4feb0d3160d3242278efd39f079b1170
+      internalID: -6706158372462864969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 89c87cbf73c5c4ade84332efd7bf8505
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
