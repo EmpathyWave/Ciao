@@ -96,10 +96,6 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
             UIActivate();
             SControls();
             TextUpdate();
-        }
-        else if (girl.GetComponent<Walking>().tutorial)
-        {
-            UIActivate();
         } //walking mode
         else{
             UIDeactivate();
@@ -123,6 +119,11 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
             {
                 for (int a = 0; a < moveButtons.Length; a++) {
                     moveButtons[a].gameObject.SetActive(false); }
+            }
+            else
+            {
+                for (int a = 0; a < moveButtons.Length; a++) {
+                    moveButtons[a].gameObject.SetActive(true); }
             }
 
             tParent.SetActive(false);
