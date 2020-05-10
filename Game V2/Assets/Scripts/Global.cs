@@ -53,7 +53,8 @@ public class Global : MonoBehaviour
    }
    void Start() //defaulting
    {
-      currentGS = GameState.Walking;
+      currentGS = GameState.Intro;
       currentUIS = UIState.Walking;
+      currentLocation = LocationState.Docks;
    }
 }

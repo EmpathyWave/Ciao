@@ -17,11 +17,29 @@ public class CameraFollow : MonoBehaviour
         offset = transform.position - girl.transform.position;
     }
 
-    // LateUpdate is called after Update each frame
-    void LateUpdate () 
+    void Update()
     {
-        // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        transform.position = girl.transform.position + offset;
+        if (Global.me.moving && Global.me.currentLocation == Global.LocationState.Hills)
+        {
+            transform.position = new Vector3(-630.6324f, 228.852f, -9.91f);
+        }
+
+        if ((Global.me.currentLocation == Global.LocationState.Hills) && (girl.transform.position.x > -630.7705))
+        {
+            transform.position = girl.transform.position + offset;
+        }
+        
+        if ((Global.me.currentLocation == Global.LocationState.Docks) && (girl.transform.position.x > -673))
+        {
+            transform.position = girl.transform.position + offset;
+        }
+        
+        if ((Global.me.currentLocation == Global.LocationState.Piazza) && ((girl.transform.position.x > -665.2054) && (girl.transform.position.x < -633.7614)))
+        {
+            transform.position = girl.transform.position + offset;
+        }
+
     }
+    
 
 }

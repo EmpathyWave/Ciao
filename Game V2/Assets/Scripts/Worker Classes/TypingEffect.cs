@@ -16,6 +16,7 @@ public class TypingEffect : MonoBehaviour
 
     private void Start()
     {
+        sounds.GetComponent<SoundController>().playTS = true;
         StartCoroutine(AnimateText());
         //throw new NotImplementedException();
     }
