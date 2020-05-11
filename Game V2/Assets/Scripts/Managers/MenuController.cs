@@ -17,14 +17,14 @@ public class MenuController : MonoBehaviour
 
     public void Update()
     {
-        if (Input.anyKey)
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             emitter.SetParameter("EndMain",1); 
             fader.GetComponent<Fader>().Run(true,false);
             start = true;
             //SceneManager.LoadScene("Main");
         }
-        if(fader.GetComponent<Fader>().cg.alpha > .99f && start == true)
+        if(fader.GetComponent<Fader>().cg.alpha > .999f && start == true)
         {
             SceneManager.LoadScene("Main");
         }
