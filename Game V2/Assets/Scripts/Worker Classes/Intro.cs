@@ -122,7 +122,7 @@ public class Intro : MonoBehaviour
                 //sounds.GetComponent<SoundController>().playT = false;
             }
         }
-        if (background.GetComponent<Fader>().cg.alpha < .01f && done == false)
+        if (background.GetComponent<Fader>().cg.alpha < .001f && done == false)
         {
             canvas.gameObject.SetActive(false);
             background.gameObject.SetActive(false);

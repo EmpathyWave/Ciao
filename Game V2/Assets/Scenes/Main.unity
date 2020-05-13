@@ -2155,6 +2155,8 @@ MonoBehaviour:
   map: {fileID: 1679986021}
   story: {fileID: 818131959}
   rb: {fileID: 229358520}
+  talk: 0
+  currentChar: {fileID: 0}
   facingRight: 0
   facingLeft: 0
   timer: 0
@@ -5291,7 +5293,7 @@ PrefabInstance:
     - target: {fileID: 3770185586703512191, guid: 572ef9811b203ec4ba87814bcc4cb3e5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3770185586703512191, guid: 572ef9811b203ec4ba87814bcc4cb3e5,
         type: 3}
@@ -7896,15 +7898,15 @@ RectTransform:
   m_GameObject: {fileID: 723223562}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1159924, y: 0.9757302, z: 1.0887737}
+  m_LocalScale: {x: 1.2672617, y: 0.9757302, z: 1.0887737}
   m_Children: []
   m_Father: {fileID: 1491921194}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.8, y: -2.1}
-  m_SizeDelta: {x: 194.6, y: 27}
+  m_AnchoredPosition: {x: 0.17, y: -2.44}
+  m_SizeDelta: {x: 184.45, y: 16.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &723223564
 MonoBehaviour:
@@ -7928,12 +7930,12 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 75cf99b428c38714999f5736f3daf636, type: 3}
-    m_FontSize: 12
+    m_FontSize: 11
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 125
-    m_Alignment: 5
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -9470,7 +9472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f8a92e17b704a419623f2a18f34681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJSONAsset: {fileID: 4900000, guid: a78f60efb3f27de43999f1d76bd63326, type: 3}
+  inkJSONAsset: {fileID: 4900000, guid: f97f3ee523b65d045a7fc2444ed24e8c, type: 3}
   currentKnot: 
   output: 
   map: {fileID: 1679986021}
@@ -11657,7 +11659,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18, y: 3.3}
+  m_AnchoredPosition: {x: 1, y: -3.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1002106822
@@ -14063,7 +14065,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 897.61, y: -229.96}
+  m_AnchoredPosition: {x: 898.44, y: -230.14}
   m_SizeDelta: {x: 9.42, y: 11.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1231706716
@@ -16037,6 +16039,8 @@ RectTransform:
   - {fileID: 503376188}
   - {fileID: 2028082741}
   - {fileID: 488247620}
+  - {fileID: 1747023661}
+  - {fileID: 1852075900}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17253,7 +17257,7 @@ RectTransform:
   m_GameObject: {fileID: 1543458626}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3252081, y: 1.1889777, z: 1.391104}
+  m_LocalScale: {x: 0.33740342, y: 1.1889777, z: 1.391104}
   m_Children: []
   m_Father: {fileID: 1491921194}
   m_RootOrder: 2
@@ -17392,8 +17396,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.6, y: -7.6}
-  m_SizeDelta: {x: 186.8, y: 40.3}
+  m_AnchoredPosition: {x: -13, y: -7.6}
+  m_SizeDelta: {x: 194.2, y: 37.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1543795008
 MonoBehaviour:
@@ -17417,7 +17421,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 75cf99b428c38714999f5736f3daf636, type: 3}
-    m_FontSize: 10
+    m_FontSize: 9
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -17430,7 +17434,7 @@ MonoBehaviour:
     m_LineSpacing: 0.96
   m_Text: "Ol\u2019 Lucca is probably getting the bakery ready for the day. I didn\u2019t
     know he had a niece\u2026but I did know he was close with your grandfather. Everyone
-    else knows more than me."
+    else knows more than me.gfgfgfgfgffffffffffffffffffffffffffffffffffffffff"
 --- !u!222 &1543795009
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19577,12 +19581,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747023659}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -654.77, y: -2.41, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 902.967, y: -233.11493, z: 0}
+  m_LocalScale: {x: 1.6064258, y: 1.6064258, z: 1.6064258}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1463792094}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1749867066
 GameObject:
@@ -20367,12 +20371,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852075898}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -663.48, y: -5.01, z: 0}
-  m_LocalScale: {x: 1.4125, y: 1.0625, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 893.63904, y: -237.54866, z: 0}
+  m_LocalScale: {x: 1.5127176, y: 1.1378849, z: 1.0709505}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1463792094}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1856471714
 GameObject:
@@ -22973,7 +22977,7 @@ PrefabInstance:
     - target: {fileID: 3770185586703512191, guid: 572ef9811b203ec4ba87814bcc4cb3e5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3770185586703512191, guid: 572ef9811b203ec4ba87814bcc4cb3e5,
         type: 3}

@@ -21,9 +21,9 @@ public class Walking : MonoBehaviour
     
     public Rigidbody2D rb;
 
-    private bool talk = false;
+    public bool talk = false;
 
-    private GameObject currentChar;
+    public GameObject currentChar;
     private Vector2 rightVel;
     private Vector2 leftVel;
     
