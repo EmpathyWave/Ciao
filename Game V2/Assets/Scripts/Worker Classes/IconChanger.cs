@@ -12,7 +12,7 @@ public class IconChanger : MonoBehaviour
     {
         if (Global.me.currentGS == Global.GameState.Selecting)
         {
-            
+            Run();
         }
     }
 
@@ -25,6 +25,39 @@ public class IconChanger : MonoBehaviour
                 if (i == 0)
                 {
                     icons[0].gameObject.SetActive(true);
+                }
+                else
+                {
+                    icons[i].gameObject.SetActive(false);
+                }
+            }
+            if (girl.GetComponent<Walking>().currentChar.tag == "Bartender")
+            {
+                if (i == 1)
+                {
+                    icons[1].gameObject.SetActive(true);
+                }
+                else
+                {
+                    icons[i].gameObject.SetActive(false);
+                }
+            }
+            if (girl.GetComponent<Walking>().currentChar.tag == "EmiliaCardello")
+            {
+                if (i == 2)
+                {
+                    icons[2].gameObject.SetActive(true);
+                }
+                else
+                {
+                    icons[i].gameObject.SetActive(false);
+                }
+            }
+            if (girl.GetComponent<Walking>().currentChar.tag == "UncleLucca")
+            {
+                if (i == 3)
+                {
+                    icons[3].gameObject.SetActive(true);
                 }
                 else
                 {

@@ -23,7 +23,7 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
     
     [Header("Timeline")]
     public GameObject tParent; //parent object to Timeline
-    public Button[] tButtons;
+    
     
     
     [Header("Family Tree")]
@@ -127,8 +127,7 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
             }
 
             tParent.SetActive(false);
-            for (int b = 0; b < tButtons.Length; b++) {
-                tButtons[b].gameObject.SetActive(false); }
+              
             
             treeParent.SetActive(false);
             for (int c = 0; c < treeButtons.Length; c++) {
@@ -149,11 +148,7 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
         if (Global.me.currentUIS == Global.UIState.Timeline) //activating Timeline UI
         {
             tParent.SetActive(true);
-            if (Global.me.currentGS == Global.GameState.Selecting)
-            {
-                for (int g = 0; g < tButtons.Length; g++)
-                { tButtons[g].gameObject.SetActive(true); }
-            }
+            
             lmParent.SetActive(false);
 
             treeParent.SetActive(false);
@@ -184,8 +179,7 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
             lmParent.SetActive(false);
 
             tParent.SetActive(false);
-            for (int i = 0; i < tButtons.Length; i++) {
-                tButtons[i].gameObject.SetActive(false); }
+ 
             
             hParent.SetActive(false);
             for (int i = 0; i < hButtons.Length; i++) {
@@ -212,8 +206,7 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
             lmParent.SetActive(false);
             
             tParent.SetActive(false);
-            for (int i = 0; i < tButtons.Length; i++) {
-                tButtons[i].gameObject.SetActive(false); }
+ 
             
             treeParent.SetActive(false);
             for (int i = 0; i < treeButtons.Length; i++) {
@@ -240,8 +233,7 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
             lmParent.SetActive(false);
             
             tParent.SetActive(false);
-            for (int i = 0; i < tButtons.Length; i++) {
-                tButtons[i].gameObject.SetActive(false); }
+ 
 
             treeParent.SetActive(false);
             for (int i = 0; i < treeButtons.Length; i++) {
@@ -268,8 +260,7 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
             lmParent.SetActive(false);
             
             tParent.SetActive(false);
-            for (int i = 0; i < tButtons.Length; i++) {
-                tButtons[i].gameObject.SetActive(false); }
+ 
 
             treeParent.SetActive(false);
             for (int i = 0; i < treeButtons.Length; i++) {
@@ -298,9 +289,7 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
         hParent.SetActive(false);
         dParent.SetActive(false);
         pParent.SetActive(false);
-
-        for (int i = 0; i < tButtons.Length; i++) {
-            tButtons[i].gameObject.SetActive(false); }
+        
         for (int i = 0; i < treeButtons.Length; i++) {
             treeButtons[i].gameObject.SetActive(false); }
         for (int i = 0; i < hButtons.Length; i++) {
@@ -356,12 +345,6 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
             q_box.GetComponentInChildren<Text>().text = "";
             
             
-                for (int i = 0; i < tButtons.Length; i++) //resets buttons
-                {
-                    tButtons[i].gameObject.SetActive(true);
-                    tButtons[i].gameObject.GetComponent<Button>().interactable = true; 
-                }
-            
                 for (int i = 0; i < treeButtons.Length; i++) //resets buttons
                 {
                     treeButtons[i].gameObject.SetActive(true);
@@ -402,12 +385,6 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
             q_box.GetComponentInChildren<Text>().text = "";
             
             story_output = "";
-            
-                for (int i = 0; i < tButtons.Length; i++) //resets buttons
-                {
-                    tButtons[i].gameObject.GetComponent<Button>().interactable = true; 
-                    tButtons[i].gameObject.SetActive(false);
-                }
             
             
                 for (int i = 0; i < treeButtons.Length; i++) //resets buttons

@@ -87,12 +87,12 @@ public class Walking : MonoBehaviour
             //moving = false;
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftShift) && tutorial == false)
+        if (Global.me.currentGS == Global.GameState.Walking && (Input.GetKeyUp(KeyCode.LeftShift) ||Input.GetKeyUp(KeyCode.RightShift)) && tutorial == false)
         {
             canvasing.SetActive(true);
             helpScreen.SetActive(true);
             tutorial = true;
-        }else if (Input.GetKeyUp(KeyCode.LeftShift) && tutorial)
+        }else if (Global.me.currentGS == Global.GameState.Walking && (Input.GetKeyUp(KeyCode.LeftShift) ||Input.GetKeyUp(KeyCode.RightShift))  && tutorial)
         {
             helpScreen.SetActive(false);
             canvasing.SetActive(false);

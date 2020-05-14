@@ -246,35 +246,31 @@ public class SoundController : MonoBehaviour
             playStep = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Global.me.puzzle1)
         {
             emitter.SetParameter("Layer 2",1);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Global.me.puzzle2)
         {
             emitter.SetParameter("Layer 3",1);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        if (Global.me.puzzle3)
         {
             emitter.SetParameter("Layer 4",1);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
+        if (Global.me.puzzle4)
         {
             emitter.SetParameter("Layer 5",1);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha6))
+        if (Global.me.puzzle5)
         {
             emitter.SetParameter("Layer 6",1);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha7))
+        if (Global.me.puzzle6)
         {
             emitter.SetParameter("Layer 7",1);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha8))
-        {
-            emitter.SetParameter("PuzzleEnd",1);
-        }
-        
+
         //puzzle.setParameterByName("Layer 1", 1);
         
         

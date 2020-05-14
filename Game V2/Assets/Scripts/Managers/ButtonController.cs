@@ -38,12 +38,7 @@ public class ButtonController : MonoBehaviour ///delete and rename input field a
         //changing the ui to onl;y be selected state when the button is clicked
         if (map.GetComponent<MapController>().input_num == 2)
         {
-            for (int i = 0; i < map.GetComponent<MapController>().tButtons.Length; i++) //resets buttons
-            {
-                //map.GetComponent<MapController>().tButtons[i].gameObject.GetComponent<Button>().interactable = false; 
-                map.GetComponent<MapController>().tButtons[i].gameObject.SetActive(false);
-            }
-            
+
             for (int i = 0; i < map.GetComponent<MapController>().treeButtons.Length; i++) //resets buttons
             {
                 //map.GetComponent<MapController>().treeButtons[i].gameObject.GetComponent<Button>().interactable = false; 

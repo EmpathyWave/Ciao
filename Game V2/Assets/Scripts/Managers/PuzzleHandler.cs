@@ -7,34 +7,28 @@ using UnityEngine.UI;
 public class PuzzleHandler : MonoBehaviour //wow rework this guy
 {
     public GameObject story;
-    public GameObject global;
+    //public GameObject global;
+    
+    public InputField EmiliaCordella;
 
-    public GameObject trattoria;
-    public GameObject bakery;
-    public GameObject bar;
-    public GameObject cafe;
+    public Button piazzamov;
+    public Button hillsmov;
+
+    public GameObject garfield;
     
-    public InputField trattoriaInput;
-    public InputField bakeryInput;
-    public InputField barInput;
-    //public InputField cafeInput;
-    //public InputField cafeInput;
-    //public InputField cafeInput;
-   // public InputField cafeInput;
-    
-    //check the input fields of the things and if coorect then set bool to active
+    private string solution1 = "CafeOwner.PiccolaPanetteria_";
+   //solution 2 is going to the new location 
+    private string solution3 = "Emilia Cordella";
+    private string solution4 = "Bartender.EmiliaCordella_";
+    private string solution5 = "EmiliaCordella.EmiliaCordella0UncleLucca_";
+    private string endSolution = "UncleLucca.Default_";
+   //going to the new location is the 6th solution
+
+   //check the input fields of the things and if coorect then set bool to active
     
     //checking if the right input was entered then open up the next area
     
     //private string puzzle1 = "Dave."; //fuckkkk
-    private string puzzle1 = "";
-    private string puzzle2 = "";
-    private string puzzle3 = "";
-    private string puzzle4 = "";
-    private string puzzle5 = "";
-    private string puzzle6 = "";
-    private string puzzle7 = "";
-    private string end = "";
     //allows for buttons to be activated to move to piazza and docks
     //allows for buttons to be activate to move to Hills
     
@@ -42,17 +36,67 @@ public class PuzzleHandler : MonoBehaviour //wow rework this guy
     
     public void Start()
     {
-        global = GameObject.Find("Game Manager");
+        //global = GameObject.Find("Game Manager");
         story = GameObject.Find("Story Manager");
     }
 
     //checking based off asking the questions
-    public void Check() //when the button is pressed it checks if it satisfies
+    void Update() //when the button is pressed it checks if it satisfies
     {
-        if (story.GetComponent<StoryController>().currentKnot == puzzle1)
+
+        if (EmiliaCordella.text == "Garfield")
         {
-            global.GetComponent<Global>().puzzle1 = true;
+            garfield.SetActive(true);
         }
+        if (story.GetComponent<StoryController>().currentKnot == solution1)
+        {
+            Global.me.puzzle1 = true;
+            piazzamov.interactable = true;
+        }
+
+        if (Global.me.puzzle1 == false)
+        {
+            piazzamov.interactable = false;
+        }
+
+        if (Global.me.currentLocation == Global.LocationState.Piazza)
+        {
+            Global.me.puzzle2 = true;
+        }
+        
+        if (EmiliaCordella.text == solution3)
+        {
+            Global.me.puzzle3 = true;
+        }
+        
+        if (story.GetComponent<StoryController>().currentKnot == solution4)
+        {
+            Global.me.puzzle4 = true;
+        }
+        
+        if (story.GetComponent<StoryController>().currentKnot == solution5)
+        {
+            Global.me.puzzle5 = true;
+            hillsmov.interactable = true;
+        }
+        if (Global.me.puzzle5 == false)
+        {
+            hillsmov.interactable = false;
+        }
+        
+        if (Global.me.currentLocation == Global.LocationState.Hills)
+        {
+            Global.me.puzzle6 = true;
+        }
+    
+        if (story.GetComponent<StoryController>().currentKnot == endSolution)
+        {
+            Global.me.end = true;
+        }
+        
+        
+        
+        //checking the buttons
         
         // if the name is correct then
         //activate the shader script on the building!

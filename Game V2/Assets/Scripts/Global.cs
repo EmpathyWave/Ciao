@@ -46,6 +46,12 @@ public class Global : MonoBehaviour
    
    //PUZZLE TRACKER
    public bool puzzle1 = false;
+   public bool puzzle2 = false;
+   public bool puzzle3 = false;
+   public bool puzzle4 = false;
+   public bool puzzle5 = false;
+   public bool puzzle6 = false;
+   public bool end = false;
 
    void Awake()
    {
