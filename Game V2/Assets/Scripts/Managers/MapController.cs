@@ -341,7 +341,7 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
         {
             //filters out the spaces for input into Inkle
             story.GetComponent<StoryController>().SetKnot(current_char, story.GetComponent<StoryController>().Sort(story_input1,story_input2));
-            //Debug.Log(story.GetComponent<StoryController>().currentKnot);
+            Debug.Log(story.GetComponent<StoryController>().currentKnot);
             q_box.GetComponentInChildren<Text>().text = "";
             
             
@@ -370,6 +370,7 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
 
             //d_box.GetComponentInChildren<Text>().text = story_output;
             input_num = 0;
+            story.GetComponent<StoryController>().currentKnot = null;
             Global.me.asked = false;
         }
         

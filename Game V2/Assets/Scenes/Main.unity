@@ -665,7 +665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 49564865}
   m_Layer: 5
-  m_Name: Giovanni Riccobono
+  m_Name: Grandpa Giovanni
   m_TagString: FrancisRiccobono
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2430,7 +2430,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f6b53c99ccdd445f0b08fc4401fb36a0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8c717adf35f77401dae5de6bb30b264e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7638,12 +7638,12 @@ PrefabInstance:
     - target: {fileID: 638206538284259042, guid: 572ef9811b203ec4ba87814bcc4cb3e5,
         type: 3}
       propertyPath: m_SortingLayerID
-      value: -319039977
+      value: -1647246575
       objectReference: {fileID: 0}
     - target: {fileID: 638206538284259042, guid: 572ef9811b203ec4ba87814bcc4cb3e5,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572ef9811b203ec4ba87814bcc4cb3e5, type: 3}
@@ -8466,7 +8466,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 204, y: 23}
+  m_AnchoredPosition: {x: -263, y: 33}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &732660473
@@ -8932,7 +8932,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -272, y: 30}
+  m_AnchoredPosition: {x: 176, y: 25}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &771725452
@@ -9796,7 +9796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f8a92e17b704a419623f2a18f34681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJSONAsset: {fileID: 4900000, guid: 13d710aa6bca77147b672c37299710b6, type: 3}
+  inkJSONAsset: {fileID: 4900000, guid: b78100fa13f7efc47bde997854109871, type: 3}
   currentKnot: 
   output: 
   map: {fileID: 1679986021}
@@ -12564,7 +12564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 121, y: 78}
+  m_AnchoredPosition: {x: -344, y: 89}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1036044528
@@ -14125,7 +14125,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -24
   m_Sprite: {fileID: 21300000, guid: 7e3974088e5ab4d9caabedc64c99925a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14791,12 +14791,12 @@ PrefabInstance:
     - target: {fileID: 638206538284259042, guid: 572ef9811b203ec4ba87814bcc4cb3e5,
         type: 3}
       propertyPath: m_SortingLayerID
-      value: -319039977
+      value: -1647246575
       objectReference: {fileID: 0}
     - target: {fileID: 638206538284259042, guid: 572ef9811b203ec4ba87814bcc4cb3e5,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572ef9811b203ec4ba87814bcc4cb3e5, type: 3}
@@ -15524,7 +15524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -322, y: 86}
+  m_AnchoredPosition: {x: 120, y: 86}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1334760482
@@ -16513,7 +16513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1390164606
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21593,7 +21593,7 @@ GameObject:
   - component: {fileID: 1870812222}
   - component: {fileID: 1870812221}
   m_Layer: 5
-  m_Name: Giovanni Riccobono
+  m_Name: Grandpa Giovanni
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
