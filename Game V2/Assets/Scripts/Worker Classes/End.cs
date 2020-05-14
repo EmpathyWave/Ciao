@@ -11,6 +11,8 @@ public class End : MonoBehaviour
     public GameObject white;
     
     public float endTimer = 25f;
+
+    public bool trueEnding = false;
     
     // Start is called before the first frame update
     void Start()
@@ -27,14 +29,15 @@ public class End : MonoBehaviour
             timer -= Time.deltaTime;
         }
 
-        if (timer < 0)
+        if (timer < 0 && trueEnding == false)
         {
             canvas.SetActive(true);
             text.GetComponent<Fader>().Run(true,false);
             white.GetComponent<Fader>().Run(true,false);
+            trueEnding = true;
         }
 
-        if (endTimer < 0)
+        if (endTimer < 0 && trueEnding)
         {
             Application.Quit();
         }

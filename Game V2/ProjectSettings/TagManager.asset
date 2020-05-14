@@ -5,15 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - TheBees
-  - CharacterName
   - DanniRiccobono
   - EmiliaCardero
   - LuccaRomana
-  - FrancisRiccobono
   - EmiliaCardello
   - CafeOwner
-  - UncleRomana
   - UncleLucca
+  - Bartender
   layers:
   - Default
   - TransparentFX

@@ -62,6 +62,8 @@ public class StoryController : MonoBehaviour
 
     public string Sort(string one, string two)
     {
+        one = one.Replace("'", "");
+        two = two.Replace("'", "");
         string [] temp = {one, two};
         string output;
         if (temp[1] != "")
