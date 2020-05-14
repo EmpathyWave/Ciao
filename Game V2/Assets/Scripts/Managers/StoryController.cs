@@ -62,20 +62,20 @@ public class StoryController : MonoBehaviour
 
     public string Sort(string one, string two)
     {
-        one = one.Replace("'", "");
-        two = two.Replace("'", "");
+        //one = one.Replace("'", "");
+        
         string [] temp = {one, two};
-        string output;
+        string outting = "";
         if (temp[1] != "")
         {
             Array.Sort(temp);
-            output = temp[0] + "0" + temp[1] + "_";
+            outting = temp[0].Replace("'", "") + "0" + temp[1].Replace("'", "") + "_";
         }
         else
         {
-            output = temp[0] + "_";
+            outting = temp[0].Replace("'", "") + "_";
         }
 
-        return output;
+        return outting;
     }
 }
