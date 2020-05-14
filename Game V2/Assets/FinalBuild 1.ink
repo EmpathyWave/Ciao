@@ -17,7 +17,7 @@
     =DanniRiccobono_
         I don’t know much about your family, but I have heard some of the stories, you are pretty famous I guess!
         ->DONE
-    =DanniRiccobono0EmiliaCordella_
+    =DanniRiccobono0EmiliaCardello_
         I don’t know much about you or her.
         ->DONE
     =DanniRiccobono0GrandpaGiovanni_
@@ -32,19 +32,19 @@
     =DanniRiccobono0UncleLucca_
         I would be pretty excited to see my long-lost niece if I was him, I would also feel a bit awkward.
         ->DONE
-    =EmiliaCordella_
+    =EmiliaCardello_
         I feel like she always knows what’s going on, she orders a cappuccino and sits at the bar talking with everyone. Never a dull moment…
         ->DONE
-    =EmiliaCordella0GrandpaGiovanni_
+    =EmiliaCardello0GrandpaGiovanni_
         I don’t know about their whole relationship, you’d be better off asking her or your grandpa about this.
         ->DONE
-    =EmiliaCordella0Lucianos_
+    =EmiliaCardello0Lucianos_
         I am sure she loves that place, everyone does, it’s Luciano’s, sometimes their pasta is a bit too al dente, but other than that you can’t go wrong.
         ->DONE
-    =EmiliaCordella0PiccolaPanetteria_
+    =EmiliaCardello0PiccolaPanetteria_
         I am sure she is there right now…she loves that place and plus she is always in the town square.
         ->DONE
-    =EmiliaCordella0UncleLucca_
+    =EmiliaCardello0UncleLucca_
         I see them chat in my café sometimes. Lucca and she are around the same age, they are old friends, I don’t know much, I focus on the coffee hahaha
         ->DONE
     =GrandpaGiovanni_
@@ -87,7 +87,7 @@
     =DanniRiccobono_
         Welcome to the town glad you could visit, I know it’s not Milano, but it’s got its own charm.
         ->DONE
-    =DanniRiccobono0EmiliaCordella_
+    =DanniRiccobono0EmiliaCardello_
         You should talk to her about the town. She pays more attention than I do.
         ->DONE
     =DanniRiccobono0GrandpaGiovanni_
@@ -102,19 +102,19 @@
     =DanniRiccobono0UncleLucca_
         I never heard Lucca talk about you until recently, he seemed excited last time I spoke to him about you coming.
         ->DONE
-    =EmiliaCordella_
+    =EmiliaCardello_
         She is a nice lady, on these days I usually see her chatting with Lucca, maybe you should ask her about if they talked today. I haven’t seen him around personally.
         ->DONE
-    =EmiliaCordella0GrandpaGiovanni_
+    =EmiliaCardello0GrandpaGiovanni_
         I haven’t heard much about them.
         ->DONE
-    =EmiliaCordella0Lucianos_
+    =EmiliaCardello0Lucianos_
         Yeah, she likes to come around sometimes, everyone in this town is a regular here.
         ->DONE
-    =EmiliaCordella0PiccolaPanetteria_
+    =EmiliaCardello0PiccolaPanetteria_
         Not much to say about that, she is friends with Lucca, she knows a lot about its history.
         ->DONE
-    =EmiliaCordella0UncleLucca_
+    =EmiliaCardello0UncleLucca_
         I bet you she knows where he is, you should ask her about the two of them.
         ->DONE
     =GrandpaGiovanni_
@@ -158,7 +158,7 @@
     =DanniRiccobono_
         Oh, I know your grandfather, and I was lucky enough to meet your mother, you have a very lovely family. You are very lucky young lady.
         ->DONE
-    =DanniRiccobono0EmiliaCordella_
+    =DanniRiccobono0EmiliaCardello_
         I don’t think we know each other but I am so happy that I get to meet you.
         ->DONE
     =DanniRiccobono0GrandpaGiovanni_
@@ -173,19 +173,19 @@
     =DanniRiccobono0UncleLucca_
         I know your uncle is so excited to see you, it’s always the first thing he talks about lately.
         ->DONE
-    =EmiliaCordella_
+    =EmiliaCardello_
         That’s me, I usually know what’s going on in the town, I like to be kind of a mom to everyone hehe
         ->DONE
-    =EmiliaCordella0GrandpaGiovanni_
+    =EmiliaCardello0GrandpaGiovanni_
         Your grandfather and I were friends and when he moved to Milano, I wrote him updates about the town. He is a few years older than me, so is Lucca.
         ->DONE
-    =EmiliaCordella0Lucianos_
+    =EmiliaCardello0Lucianos_
         It’s weird, but I just love their house rosé, unpopular opinion I know but it’s perfectly sweet enough for me.
         ->DONE
-    =EmiliaCordella0PiccolaPanetteria_
+    =EmiliaCardello0PiccolaPanetteria_
         I love this little bakery, it brings such life to our tiny town, everyone especially all the children love this place. I can’t live without getting freshly baked bread in the morning.
         ->DONE
-    =EmiliaCordella0UncleLucca_
+    =EmiliaCardello0UncleLucca_
         Oh, right I should tell you! I saw your uncle today! He was over in Hills. He was sitting on a bench. It shouldn’t be hard to find, it’s on your map. Go find him, he is excited to see you!
         ->DONE
     =GrandpaGiovanni_

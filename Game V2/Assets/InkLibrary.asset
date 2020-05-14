@@ -14,28 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inkLibrary:
   - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: c3b7354eae7e0964c93d32edb75f2cc6, type: 3}
+    inkAsset: {fileID: 102900000, guid: a0f94f16fa6dc99498b26e8d2bfbbbf2, type: 3}
     jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: eb4b236c5fb3f2449b8d64f7f2b59160, type: 3}
-  - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: e005fd5650b9c5e49a5fb058b2920c05, type: 3}
-    jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: 7728a945f10faab49aa56f84577a8db5, type: 3}
-  - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: 8611723debfadd54d8f68e0e1fa15fac, type: 3}
-    jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: f97f3ee523b65d045a7fc2444ed24e8c, type: 3}
-  - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: 4f0e7e7cdbc06f147ba6702261a51970, type: 3}
-    jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: a78f60efb3f27de43999f1d76bd63326, type: 3}
+    jsonAsset: {fileID: 4900000, guid: 13d710aa6bca77147b672c37299710b6, type: 3}
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: f4dd87d8606302b47853f4e3fdcbf385, type: 3}
     jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 4900000, guid: b78100fa13f7efc47bde997854109871, type: 3}
   - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: a0f94f16fa6dc99498b26e8d2bfbbbf2, type: 3}
+    inkAsset: {fileID: 102900000, guid: 4f0e7e7cdbc06f147ba6702261a51970, type: 3}
     jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: 13d710aa6bca77147b672c37299710b6, type: 3}
+    jsonAsset: {fileID: 4900000, guid: a78f60efb3f27de43999f1d76bd63326, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: c3b7354eae7e0964c93d32edb75f2cc6, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: eb4b236c5fb3f2449b8d64f7f2b59160, type: 3}
   pendingCompilationStack: []
   compilationStack: []

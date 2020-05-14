@@ -372,7 +372,6 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
             input_num = 0;
             story_input1 = "";
             story_input2 = "";
-            story.GetComponent<StoryController>().currentKnot = null;
             Global.me.asked = false;
         }
         
