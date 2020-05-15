@@ -19,7 +19,7 @@ public class MenuController : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.anyKey)
         {
              
             fader.GetComponent<Fader>().Run(false,true);
