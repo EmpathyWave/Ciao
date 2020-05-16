@@ -10,6 +10,13 @@ public class PuzzleHandler : MonoBehaviour //wow rework this guy
     //public GameObject global;
     
     public InputField EmiliaCordella;
+    public InputField Lucianos;
+    public InputField Piccola;
+
+    public GameObject PLLD; //Piccola Lit, Lucianos dark
+    public GameObject PLLL; //Piccola Lit, Lucianos lit
+    public GameObject PDLL; //Piccola Dark, Lucianos lit
+    public GameObject PDLD; //Piccola Dark, Lucianos dark
 
     public Button piazzamov;
     public Button hillsmov;
@@ -22,6 +29,7 @@ public class PuzzleHandler : MonoBehaviour //wow rework this guy
     private string solution4 = "Bartender.EmiliaCordella_";
     private string solution5 = "EmiliaCordella.EmiliaCordella0UncleLucca_";
     private string endSolution = "UncleLucca.Default_";
+    
    //going to the new location is the 6th solution
 
    //check the input fields of the things and if coorect then set bool to active
@@ -93,7 +101,42 @@ public class PuzzleHandler : MonoBehaviour //wow rework this guy
         {
             Global.me.end = true;
         }
-        
+
+
+        if (Piccola.text == "Piccola Panetteria")
+        {
+            if (Lucianos.text == "Luciano's")
+            {
+                PLLD.SetActive(false); //Piccola Lit, Lucianos dark  
+                PLLL.SetActive(true); //Piccola Lit, Lucianos lit 
+                PDLL.SetActive(false); //Piccola Dark, Lucianos lit 
+                PDLD.SetActive(false); //Piccola Dark, Lucianos dark 
+            }
+            else
+            {
+                PLLD.SetActive(true); //Piccola Lit, Lucianos dark  
+                PLLL.SetActive(false); //Piccola Lit, Lucianos lit 
+                PDLL.SetActive(false); //Piccola Dark, Lucianos lit 
+                PDLD.SetActive(false); //Piccola Dark, Lucianos dark 
+            }
+        }
+        else
+        {
+            if (Lucianos.text == "Luciano's")
+            {
+                PLLD.SetActive(false); //Piccola Lit, Lucianos dark  
+                PLLL.SetActive(false); //Piccola Lit, Lucianos lit 
+                PDLL.SetActive(true); //Piccola Dark, Lucianos lit 
+                PDLD.SetActive(false); //Piccola Dark, Lucianos dark 
+            }
+            else
+            {
+                PLLD.SetActive(false); //Piccola Lit, Lucianos dark  
+                PLLL.SetActive(false); //Piccola Lit, Lucianos lit 
+                PDLL.SetActive(false); //Piccola Dark, Lucianos lit 
+                PDLD.SetActive(true); //Piccola Dark, Lucianos dark 
+            }
+        }
         
         
         //checking the buttons
