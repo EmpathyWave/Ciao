@@ -25,9 +25,9 @@ public class PuzzleHandler : MonoBehaviour //wow rework this guy
     
     private string solution1 = "CafeOwner.PiccolaPanetteria_";
    //solution 2 is going to the new location 
-    private string solution3 = "Emilia Cordella";
-    private string solution4 = "Bartender.EmiliaCordella_";
-    private string solution5 = "EmiliaCordella.EmiliaCordella0UncleLucca_";
+    private string solution3 = "Emilia Cardello";
+    private string solution4 = "Bartender.EmiliaCardello_";
+    private string solution5 = "EmiliaCardello.EmiliaCardello0UncleLucca_";
     private string endSolution = "UncleLucca.Default_";
     
    //going to the new location is the 6th solution

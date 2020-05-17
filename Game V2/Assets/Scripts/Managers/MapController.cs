@@ -499,6 +499,7 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
                 } else {
                     //Debug.Log(hInputs[i].transform.GetChild(4).gameObject.name + "false");
                     //hInputs[i].transform.GetChild(4).gameObject.SetActive(false);
+                    hInputs[i].transform.GetChild(4).gameObject.SetActive(false);
                     hInputs[i].transform.GetChild(2).GetComponent<InputField>().interactable = true;
                     hInputs[i].transform.GetChild(3).GetComponent<InputField>().interactable = true;
                 }
@@ -542,6 +543,7 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
                 } else {
                     //Debug.Log(dInputs[i].transform.GetChild(4).gameObject.name + "false");
                     //dInputs[i].transform.GetChild(4).gameObject.SetActive(false);
+                    pInputs[i].transform.GetChild(4).gameObject.SetActive(false);
                     dInputs[i].transform.GetChild(3).GetComponent<InputField>().interactable = true;
                     dInputs[i].transform.GetChild(2).GetComponent<InputField>().interactable = true;
                 }
@@ -586,6 +588,7 @@ public class MapController : MonoBehaviour //handles all the UI elements when na
                 } else {
                     //Debug.Log(pInputs[i].transform.GetChild(4).gameObject.name + "false");
                     //pInputs[i].transform.GetChild(4).gameObject.SetActive(false);
+                    pInputs[i].transform.GetChild(4).gameObject.SetActive(false);
                     pInputs[i].transform.GetChild(3).GetComponent<InputField>().interactable = true;
                     pInputs[i].transform.GetChild(2).GetComponent<InputField>().interactable = true;
                 }
