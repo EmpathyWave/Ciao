@@ -5,7 +5,6 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     public GameObject girl;        //Public variable to store a reference to the player game object
-
     
 
     private Vector3 offset;            //Private variable to store the offset distance between the player and camera
@@ -34,7 +33,7 @@ public class CameraFollow : MonoBehaviour
             transform.position = girl.transform.position + offset;
         }
         
-        if ((Global.me.currentLocation == Global.LocationState.Piazza) && ((girl.transform.position.x > -665.2054) && (girl.transform.position.x < -633.7614)))
+        if ((Global.me.currentLocation == Global.LocationState.Piazza) && ((girl.transform.position.x > -674.4295) && (girl.transform.position.x < -652.57)))
         {
             transform.position = girl.transform.position + offset;
         }
