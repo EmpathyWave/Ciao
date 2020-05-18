@@ -20,20 +20,15 @@ public class CameraFollow : MonoBehaviour
     {
         if (Global.me.moving && Global.me.currentLocation == Global.LocationState.Hills)
         {
-            transform.position = new Vector3(-630.6324f, 228.852f, -9.91f);
+            transform.position = new Vector3(-631.2946f, 228.67f, -10f);
         }
 
-        if ((Global.me.currentLocation == Global.LocationState.Hills) && (girl.transform.position.x > -630.7705))
-        {
-            transform.position = girl.transform.position + offset;
-        }
-        
         if ((Global.me.currentLocation == Global.LocationState.Docks) && (girl.transform.position.x > -673))
         {
             transform.position = girl.transform.position + offset;
         }
         
-        if ((Global.me.currentLocation == Global.LocationState.Piazza) && ((girl.transform.position.x > -674.4295) && (girl.transform.position.x < -652.57)))
+        if ((Global.me.currentLocation == Global.LocationState.Piazza) && ((girl.transform.position.x > -679.41) && (girl.transform.position.x < -656.4505)))
         {
             transform.position = girl.transform.position + offset;
         }
