@@ -12593,7 +12593,6 @@ MonoBehaviour:
   canvas: {fileID: 1940720416}
   text: {fileID: 904332614}
   white: {fileID: 1109309693}
-  endTimer: 25
   trueEnding: 1
 --- !u!1 &634047857
 GameObject:

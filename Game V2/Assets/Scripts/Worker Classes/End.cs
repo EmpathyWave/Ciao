@@ -10,14 +10,14 @@ public class End : MonoBehaviour
     public GameObject text;
     public GameObject white;
     
-    public float endTimer = 25f;
+    //public float endTimer = f;
 
     public bool trueEnding = false;
     
     // Start is called before the first frame update
     void Start()
     {
-        timer = 3f;
+        timer = 5f;
     }
 
     // Update is called once per frame
@@ -25,19 +25,11 @@ public class End : MonoBehaviour
     {
         if (Global.me.end)
         {
-            endTimer -= Time.deltaTime;
             timer -= Time.deltaTime;
-        }
-
-        if (timer < 0 && trueEnding == false)
-        {
-            canvas.SetActive(true);
-            text.GetComponent<Fader>().Run(true,false);
-            white.GetComponent<Fader>().Run(true,false);
             trueEnding = true;
         }
 
-        if (endTimer < 0 && trueEnding)
+        if (timer < 0 && trueEnding)
         {
             Application.Quit();
         }
