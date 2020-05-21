@@ -201,6 +201,7 @@ public class Walking : MonoBehaviour
         if (other.tag != "Untagged")
         {
             talk = true;
+            other.transform.GetChild(0).gameObject.SetActive(true);
         }
 
         currentChar = other.gameObject;
@@ -212,6 +213,7 @@ public class Walking : MonoBehaviour
         {
             
             talk = true;
+            other.transform.GetChild(0).gameObject.SetActive(true);
         }
         
         currentChar = other.gameObject;
@@ -223,6 +225,7 @@ public class Walking : MonoBehaviour
         if (other.tag != "Untagged")
         {
             talk = false;
+            other.transform.GetChild(0).gameObject.SetActive(false);
         }
 
         currentChar = null;

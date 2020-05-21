@@ -28,7 +28,7 @@ public class CameraFollow : MonoBehaviour
             transform.position = girl.transform.position + offset;
         }
         
-        if ((Global.me.currentLocation == Global.LocationState.Piazza) && ((girl.transform.position.x > -679.41) && (girl.transform.position.x < -656.4505)))
+        if ((Global.me.currentLocation == Global.LocationState.Piazza) && ((girl.transform.position.x > -679.41) && (girl.transform.position.x < -651.6)))
         {
             transform.position = girl.transform.position + offset;
         }
